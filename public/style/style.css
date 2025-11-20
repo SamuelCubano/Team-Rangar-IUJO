@@ -215,6 +215,7 @@
         grid-column: 6 / 17;
         grid-row: 36;
         text-align: center;
+        background-color: red;
       }
 
       .ten p.info {
