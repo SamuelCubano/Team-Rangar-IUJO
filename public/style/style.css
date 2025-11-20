@@ -151,7 +151,6 @@
       .two {
         grid-column: 1 / 22;
         grid-row: 1 / 16; 
-        background-color: #ade0de;
         background-image: url(../img/deepfakes-2.jpg);
         background-size: cover;
 
