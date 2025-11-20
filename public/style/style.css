@@ -201,7 +201,7 @@
       .eight {
         grid-column: 1 / 22;
         grid-row: 31 / 33;
-        background: linear-gradient(to bottom right, #00628b 1%, #0084a2 25%, #00b8bc 100%);
+        background: #1A375E;
         text-align: center;
       }
 
