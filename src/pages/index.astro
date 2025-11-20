@@ -19,8 +19,9 @@
 
       <!-- Header Barra -->
       <header>
-        <p class="sd">Team Rangar</p>
+        <p class="sd" data-es="Equipo-Rangar" data-en="Team Rangar">Team Rangar</p>
         <div id="elements">
+          
             <button class="menu-toggle" id="menuToggle">☰</button> <!-- Botón de hamburguesa -->
             <div class="links" id="menu">
                 <button class="close-menu" id="closeMenu">✖</button> <!-- Botón de cerrar -->
@@ -30,6 +31,7 @@
                 <a href="/noticias/">Guía de Detección</a>
                 <a href="/contacto/">Soluciones y Regulaciones</a>
                 <a href="/faqs/">FAQ</a>
+                <button id="lang-toggle" data-lang="es" style="border-radius: 50px; padding: 15px">es</button>
             </div>
         </div>
     </header>
@@ -253,6 +255,45 @@
           }
         }
       });
+    </script>
+
+    <script>
+      const savedLang = localStorage.getItem('lang');
+      
+      if (savedLang) {
+        document.documentElement.lang = savedLang;
+        const langToggle = document.getElementById('lang-toggle');
+        if (langToggle) {
+          langToggle.textContent = savedLang;
+          langToggle.setAttribute('data-lang', savedLang);
+        }
+      }
+
+        // 3. Cambio de Idioma
+  const langToggle = document.getElementById('lang-toggle');
+  const elementosTraducibles = document.querySelectorAll('[data-es]');
+
+  if (langToggle) {
+    langToggle.addEventListener('click', () => {
+      const currentLang = langToggle.dataset.lang || 'es';
+      const newLang = currentLang === 'en' ? 'es' : 'en';
+
+      elementosTraducibles.forEach(el => {
+        const text = el.dataset[newLang];
+        if (typeof text !== 'undefined') {
+          el.textContent = text;
+        }
+      });
+
+      if (newLang === 'es') {
+        langToggle.textContent = '🇺🇸';
+      } else {
+        langToggle.textContent = '🇪🇸';
+      }
+      langToggle.dataset.lang = newLang;
+      localStorage.setItem('lang', newLang);
+    });
+  }
     </script>
   </body>
 </html>
