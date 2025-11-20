@@ -227,7 +227,7 @@
         grid-row: 41 / 44;
         margin: 12px;
         background: #1A375E;
-        border: solid 1px grey;
+        border: solid 1px #1A375E;
         text-align: center;
         border-bottom-left-radius: 15px;
         border-bottom-right-radius: 15px;
@@ -238,7 +238,7 @@
         grid-row: 37 / 42;
         margin: 12px;
         background-size: cover;
-        border: solid 1px grey;
+        border: solid 1px #1A375E;
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
         text-align: center;
@@ -249,7 +249,7 @@
         grid-row: 41 / 44;
         margin: 12px;
         background: #1A375E;
-        border: solid 1px grey;
+        border: solid 1px #1A375E;
         text-align: center;
         border-bottom-left-radius: 15px;
         border-bottom-right-radius: 15px;
@@ -260,7 +260,7 @@
         grid-row: 37 / 42;
         margin: 12px;
         background-size: cover;
-        border: solid 1px grey;
+        border: solid 1px #1A375E;
         text-align: center;
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
@@ -271,7 +271,7 @@
         grid-row: 41 / 44;
         margin: 12px;
         background: #1A375E;
-        border: solid 1px grey;
+        border: solid 1px #1A375E;
         text-align: center;
         border-bottom-left-radius: 15px;
         border-bottom-right-radius: 15px;
@@ -282,7 +282,7 @@
         grid-row: 37 / 42;
         margin: 12px;
         background-size: cover;
-        border: solid 1px grey;
+        border: solid 1px #1A375E;
         text-align: center;
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
@@ -293,7 +293,7 @@
         grid-row: 48 / 51;
         margin: 12px;
         background: #1A375E;
-        border: solid 1px grey;
+        border: solid 1px #1A375E;
         text-align: center;
         border-bottom-left-radius: 15px;
         border-bottom-right-radius: 15px;
@@ -305,7 +305,7 @@
         margin: 12px;
         background-image: url(/src/images/traumatologia.png);
         background-size: cover;
-        border: solid 1px grey;
+        border: solid 1px #1A375E;
         text-align: center;
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
@@ -316,7 +316,7 @@
         grid-row: 48 / 51;
         margin: 12px;
         background: #1A375E;
-        border: solid 1px grey;
+        border: solid 1px #1A375E;
         text-align: center;
         border-bottom-left-radius: 15px;
         border-bottom-right-radius: 15px;
@@ -328,7 +328,7 @@
         margin: 12px;
         background-image: url(/src/images/cardiologia.png);
         background-size: cover;
-        border: solid 1px grey;
+        border: solid 1px #1A375E;
         text-align: center;
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
@@ -339,7 +339,7 @@
         grid-row: 48 / 51;
         margin: 12px;
         background: #1A375E;
-        border: solid 1px grey;
+        border: solid 1px #1A375E;
         text-align: center;
         border-bottom-left-radius: 15px;
         border-bottom-right-radius: 15px;
@@ -351,7 +351,7 @@
         margin: 12px;
         background-image: url(/src/images/laboratorio.png);
         background-size: cover;
-        border: solid 1px grey;
+        border: solid 1px #1A375E;
         text-align: center;
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
@@ -385,7 +385,7 @@
       }
 
       .general-boton {
-        background-color: #6cbfc6;
+        background-color: #1A375E;
         color: white;
         border: none;
         padding: 10px 20px;
@@ -400,7 +400,7 @@
       }
 
       .general-boton:hover {
-    background: linear-gradient(to bottom right, #00628b, #0084a2, #00b8bc);
+    background: linear-gradient(to bottom right, #00618b91, #0084a23a, #00b9bc2a);
     transform: scale(1.05); /* Efecto de ligera expansión */
 }
 
@@ -421,7 +421,7 @@
       .nineteen {
         grid-column: 1 / 22;
         grid-row: 85 / 89;;
-        background-color: #ade0de;
+        background-color: #1A375E;
         text-align: center;
       }
 
@@ -506,7 +506,7 @@
         grid-column: 6 / 17;
         grid-row: 82 / 84;
         text-align: center;
-        background-color: #e5e5e5;
+        background-color: #1A375E;
         border-radius: 15px;
       }
 
