@@ -167,13 +167,11 @@
       .four {
         grid-column: 1 / 22;
         grid-row: 18 / 31;
-        background: url(../img/fondodeepfakes.png);
-        background-size: cover;
       }
 
       .five {
-        grid-column: 5 / 10;
-        grid-row: 19 / 24;
+        grid-column: 12 / 18;
+        grid-row: 29 / 32;
         background-color: #ade0de;
         border-radius: 15px;
         border: 1px solid gray;
@@ -182,8 +180,8 @@
       }
 
       .six {
-        grid-column: 6 / 11;
-        grid-row: 25 / 30;
+        grid-column: 5 / 11;
+        grid-row: 26 / 29;
         background-color: #ade0de;
         border: 1px solid gray;
         border-radius: 15px;
@@ -192,33 +190,32 @@
       }
 
       .seven {
-        grid-column: 12 / 20;
-        grid-row: 19 / 30;
-        
+        grid-column: 5 / 18;
+        grid-row: 19 / 25;
+        background-color: red;
       }
 
       .eight {
-        grid-column: 1 / 22;
-        grid-row: 31 / 33;
-        background: linear-gradient(to bottom right, #00628b 1%, #0084a2 25%, #00b8bc 100%);
-        text-align: center;
+        grid-column: 5 / 11;
+        grid-row: 32 / 35;
+        background-color: #ade0de;
+        border: 1px solid gray;
+        border-radius: 15px;
       }
 
       .nine {
         grid-column: 1 / 22;
-        grid-row: 33 / 56;
-        background-color: #e5e5e5;
+        grid-row: 34 / 56;
       }
 
       .ten {
         grid-column: 6 / 17;
-        grid-row: 34 / 36;
+        grid-row: 35 / 36;
         text-align: center;
       }
 
       .ten p.info {
-        text-align: left;
-        
+        text-align: left; 
       }
 
       .eleven {
@@ -583,7 +580,7 @@ ul {
 	}
 }
 
-.three, .five, .six, .eight, .eighteen{
+.three, .eighteen{
 	view-timeline-name: --image;
 	view-timeline-axis: block;
 
