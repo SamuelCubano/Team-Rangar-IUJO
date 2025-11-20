@@ -169,10 +169,7 @@
       .four {
         grid-column: 1 / 22;
         grid-row: 18 / 31;
-<<<<<<< HEAD
-=======
         background-size: cover;
->>>>>>> 4cafb6a157f57bcda02d0f846522a3a7cd2ed922
       }
 
       .five {
@@ -196,7 +193,6 @@
       }
 
       .seven {
-<<<<<<< HEAD
         grid-column: 5 / 18;
         grid-row: 19 / 25;
         background-color: red;
@@ -208,27 +204,11 @@
         background-color: #ade0de;
         border: 1px solid gray;
         border-radius: 15px;
-=======
-        grid-column: 12 / 20;
-        grid-row: 19 / 30;
-      }
-
-      .eight {
-        grid-column: 1 / 22;
-        grid-row: 31 / 33;
-        background: #1A375E;
-        text-align: center;
->>>>>>> e6ef3b7b40e05c10e3ccd5b5b13829aeff8a25dd
       }
 
       .nine {
         grid-column: 1 / 22;
-<<<<<<< HEAD
         grid-row: 34 / 56;
-=======
-        grid-row: 33 / 56;
-        background: linear-gradient(to right, #000B18 15%, #00264D 100%);
->>>>>>> 4cafb6a157f57bcda02d0f846522a3a7cd2ed922
       }
 
       .ten {
