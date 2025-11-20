@@ -115,11 +115,18 @@
         transform: scale(1.10); /* Efecto de ligera expansión */
       }
 
-      .links a:not(:has(.link-logo)):hover {
-        color: black; /* Color de los enlaces al pasar el cursor */
-        border: solid 1px #061d25;
-        background-color: white;
-        border-radius: 15px;
+      .links button {
+        background-color: #ffffff;
+        color: #0084a2;
+        border: none;
+        font-size: 18px;
+        cursor: pointer;
+        border-radius: 25px;
+        transition: background 0.5s ease-in-out, transform 0.3s ease-in-out;
+      }
+
+      .links button:hover {
+        transform: scale(1.10); /* Efecto de ligera expansión */
       }
 
       header.scrolled .links a {
