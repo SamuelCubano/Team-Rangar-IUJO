@@ -5,7 +5,8 @@
       body {
         font-family: "Nunito Sans", serif;
         margin: 0;
-        background-color: #e5e5e5;
+        /* Fondo: corregido a un degradado válido. Cambia aquí a un color sólido si lo prefieres. */
+        background: linear-gradient(to right, #000B18 15%, #00264D 100%);
       }
 
       .wrapper {
@@ -43,7 +44,7 @@
         text-align: center;
         margin: 0;
         color: white;
-        background: linear-gradient(to bottom right, #00628b 1%, #0084a2 25%, #00b8bc 100%);
+        background: linear-gradient(to right, #000B18 15%, #00264D 100%);
         padding-bottom: 10px;
         padding-top: 10px;
       }
@@ -59,19 +60,20 @@
       .subtitle {
         font-size: 40px;
         margin: 20px 15px;
-        color: #00796b;
-        text-shadow: 1px 2px 2px #e5e5e5;
+        color: #ffffff;
+        text-shadow: 1px 2px 2px #00264D;
       }
 
       .twotwo .subtitle {
         margin: 20px 15px;
-        color:  #e5e5e5;
+        background: linear-gradient(to right, #000B18 15%, #00264D 100%);
         text-shadow: 1px 2px 2px #00796b;
       }
 
       h3 {
         font-size: 26px;
         margin: 20px 15px;
+        color: white;
       }
 
       .slogan {
@@ -146,28 +148,27 @@
       .twotwo {
         grid-column: 3 / 10;
         grid-row: 8 / 13;
-        background-color: rgba(0, 0, 0, 0.603);
-        color: white;
+        background: linear-gradient(to right, #000B18 15%, #00264D 100%);
+        color: rgb(255, 255, 255);
         border-top-right-radius: 15px;
         border-top-left-radius:15px;
       }
 
       .twotwo .subtitle {
-        color:  #e5e5e5;
+        background: linear-gradient(to right, #000B18 15%, #00264D 100%);
         text-shadow: 1px 2px 3px #6cbfc6;
       }
       
       .three {
         grid-column: 1 / 22;
         grid-row: 16 / 18;
-        background: linear-gradient(to bottom right, #00628b 1%, #0084a2 25%, #00b8bc 100%);
+        background: linear-gradient(to right, #000B18 15%, #00264D 100%);
         text-align: center ;
       }
 
       .four {
         grid-column: 1 / 22;
         grid-row: 18 / 31;
-        background: url(../img/fondodeepfakes.png);
         background-size: cover;
       }
 
@@ -207,7 +208,7 @@
       .nine {
         grid-column: 1 / 22;
         grid-row: 33 / 56;
-        background-color: #e5e5e5;
+        background: linear-gradient(to right, #000B18 15%, #00264D 100%);
       }
 
       .ten {
@@ -225,7 +226,7 @@
         grid-column: 4 / 9;
         grid-row: 41 / 44;
         margin: 12px;
-        background: linear-gradient(to bottom right, #00628b 1%, #0084a2 25%, #00b8bc 100%);
+        background: #1A375E;
         border: solid 1px grey;
         text-align: center;
         border-bottom-left-radius: 15px;
@@ -247,7 +248,7 @@
         grid-column: 9 / 14;
         grid-row: 41 / 44;
         margin: 12px;
-        background: linear-gradient(to bottom right, #00628b 1%, #0084a2 25%, #00b8bc 100%);
+        background: #1A375E;
         border: solid 1px grey;
         text-align: center;
         border-bottom-left-radius: 15px;
@@ -269,7 +270,7 @@
         grid-column: 14 / 19;
         grid-row: 41 / 44;
         margin: 12px;
-        background: linear-gradient(to bottom right, #00628b 1%, #0084a2 25%, #00b8bc 100%);
+        background: #1A375E;
         border: solid 1px grey;
         text-align: center;
         border-bottom-left-radius: 15px;
@@ -291,7 +292,7 @@
         grid-column: 4 / 9;
         grid-row: 48 / 51;
         margin: 12px;
-        background: linear-gradient(to bottom right, #00628b 1%, #0084a2 25%, #00b8bc 100%);
+        background: #1A375E;
         border: solid 1px grey;
         text-align: center;
         border-bottom-left-radius: 15px;
@@ -314,7 +315,7 @@
         grid-column: 9 / 14;
         grid-row: 48 / 51;
         margin: 12px;
-        background: linear-gradient(to bottom right, #00628b 1%, #0084a2 25%, #00b8bc 100%);
+        background: #1A375E;
         border: solid 1px grey;
         text-align: center;
         border-bottom-left-radius: 15px;
@@ -337,7 +338,7 @@
         grid-column: 14 / 19;
         grid-row: 48 / 51;
         margin: 12px;
-        background: linear-gradient(to bottom right, #00628b 1%, #0084a2 25%, #00b8bc 100%);
+        background: #1A375E;
         border: solid 1px grey;
         text-align: center;
         border-bottom-left-radius: 15px;
@@ -425,7 +426,7 @@
       }
 
       .nineteen button:hover {
-        background: linear-gradient(to bottom right, #00628b 1%, #0084a2 25%, #00b8bc 100%);
+        background: linear-gradient(to bottom right, #00628b 1%, #0084a2 25%, #316364 100%);
       }
 
       .twenty {
