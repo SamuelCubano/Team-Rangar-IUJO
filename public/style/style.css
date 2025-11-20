@@ -294,7 +294,7 @@
       }
 
       .general-boton {
-        background-color: #6cbfc6;
+        background-color: #3362a0;
         color: white;
         border: none;
         padding: 10px 20px;
@@ -309,7 +309,7 @@
       }
 
       .general-boton:hover {
-    background: linear-gradient(to bottom right, #00628b, #0084a2, #00b8bc);
+    background: linear-gradient(to bottom right, #00618b6b, #0084a294, #00b9bc7a);
     transform: scale(1.05); /* Efecto de ligera expansión */
 }
 
@@ -330,7 +330,7 @@
       .nineteen {
         grid-column: 1 / 22;
         grid-row: 85 / 89;;
-        background-color: #ade0de;
+        background-color: #1A375E;
         text-align: center;
       }
 
@@ -415,7 +415,7 @@
         grid-column: 6 / 17;
         grid-row: 82 / 84;
         text-align: center;
-        background-color: #e5e5e5;
+        background-color: #1A375E;
         border-radius: 15px;
       }
 
