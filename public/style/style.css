@@ -97,7 +97,7 @@
         display: flex;
         justify-content: center; /* Centrar horizontalmente */
         align-items: flex-end; /* Alinear al fondo del contenedor */
-        height: 50px; /* Ajusta la altura según sea necesario */
+        height: 30px; /* Ajusta la altura según sea necesario */
         margin-top: 10px;
       }
 
@@ -116,8 +116,8 @@
       }
 
       .links button {
-        background-color: #ffffff;
-        color: #0084a2;
+        background-color: rgba(255, 0, 0, 0);
+        color: white;
         border: none;
         font-size: 18px;
         cursor: pointer;
@@ -129,9 +129,14 @@
         transform: scale(1.10); /* Efecto de ligera expansión */
       }
 
-      header.scrolled .links a {
+      header.scrolled .links a{
         color: black; /* Color de los enlaces cuando se desplaza */
       }
+
+        header.scrolled .links button{
+        color: black; /* Color de los enlaces cuando se desplaza */
+      }
+
 
 
       header.scrolled .links a:hover {
