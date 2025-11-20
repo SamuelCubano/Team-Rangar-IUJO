@@ -223,30 +223,19 @@
       }
 
       .eleven {
-        grid-column: 4 / 9;
-        grid-row: 41 / 44;
+        grid-column: 4 / 11;
+        grid-row: 38 / 44;
         margin: 12px;
         background: #1A375E;
         border: solid 1px grey;
         text-align: center;
         border-bottom-left-radius: 15px;
         border-bottom-right-radius: 15px;
-      }
-
-      .eleveneleven {
-        grid-column: 4 / 9;
-        grid-row: 38 / 42;
-        margin: 12px;
-        background-size: cover;
-        border: solid 1px grey;
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px;
-        text-align: center;
       }
 
       .twelve {
-        grid-column: 9 / 14;
-        grid-row: 41 / 44;
+        grid-column: 12 / 19;
+        grid-row: 38 / 44;
         margin: 12px;
         background: #1A375E;
         border: solid 1px grey;
@@ -255,111 +244,31 @@
         border-bottom-right-radius: 15px;
       }
 
-      .twelvetwelve {
-        grid-column: 9 / 14;
-        grid-row: 37 / 42;
-        margin: 12px;
-        background-size: cover;
-        border: solid 1px grey;
-        text-align: center;
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px;
-      }
-
-      .thirteen {
-        grid-column: 14 / 19;
-        grid-row: 41 / 44;
-        margin: 12px;
-        background: #1A375E;
-        border: solid 1px grey;
-        text-align: center;
-        border-bottom-left-radius: 15px;
-        border-bottom-right-radius: 15px;
-      }
-
-      .thirteenthirteen {
-        grid-column: 14 / 19;
-        grid-row: 37 / 42;
-        margin: 12px;
-        background-size: cover;
-        border: solid 1px grey;
-        text-align: center;
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px;
-      }
 
       .fourteen {
-        grid-column: 4 / 9;
-        grid-row: 48 / 51;
+        grid-column: 4 / 11;
+        grid-row: 44 / 50;
         margin: 12px;
         background: #1A375E;
         border: solid 1px grey;
         text-align: center;
         border-bottom-left-radius: 15px;
         border-bottom-right-radius: 15px;
-      }
-
-      .fourteenfourteen {
-        grid-column: 4 / 9;
-        grid-row: 44 / 49;
-        margin: 12px;
-        background-image: url(/src/images/traumatologia.png);
-        background-size: cover;
-        border: solid 1px grey;
-        text-align: center;
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px;
       }
 
       .fifteen {
-        grid-column: 9 / 14;
-        grid-row: 48 / 51;
+        grid-column: 12  / 19;
+        grid-row: 44   / 50;
         margin: 12px;
         background: #1A375E;
         border: solid 1px grey;
         text-align: center;
         border-bottom-left-radius: 15px;
         border-bottom-right-radius: 15px;
-      }
-
-      .fifteenfifteen{
-        grid-column: 9 / 14;
-        grid-row: 44 / 49;
-        margin: 12px;
-        background-image: url(/src/images/cardiologia.png);
-        background-size: cover;
-        border: solid 1px grey;
-        text-align: center;
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px;
-      }
-
-      .sixteen {
-        grid-column: 14 / 19;
-        grid-row: 48 / 51;
-        margin: 12px;
-        background: #1A375E;
-        border: solid 1px grey;
-        text-align: center;
-        border-bottom-left-radius: 15px;
-        border-bottom-right-radius: 15px;
-      }
-
-      .sixteensixteen {
-        grid-column: 14 / 19;
-        grid-row: 44 / 49;
-        margin: 12px;
-        background-image: url(/src/images/laboratorio.png);
-        background-size: cover;
-        border: solid 1px grey;
-        text-align: center;
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px;
-      }
+      } 
 
       .servicios-nombre {
         font-size: 20px;
-        margin-top: 50px;
         color: white;
       } 
 
