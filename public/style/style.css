@@ -133,7 +133,7 @@
         color: black; /* Color de los enlaces cuando se desplaza */
       }
 
-        header.scrolled .links button{
+            header.scrolled .links button{
         color: black; /* Color de los enlaces cuando se desplaza */
       }
 
@@ -1079,12 +1079,21 @@ ul {
 
         .menu-toggle {
             display: block;
+            color: white;
         }
 
+          header.scrolled .menu-toggle {
+        color: black; /* Color de los enlaces cuando se desplaza */
+      }
 
         header.scrolled .links a {
         color: #e5e5e5; /* Color de los enlaces cuando se desplaza */
       }
+
+             header.scrolled .links button{
+        color:#e5e5e5; /* Color de los enlaces cuando se desplaza */
+      }
+
         .links {
             position: fixed;
             top: 0;
@@ -1103,6 +1112,14 @@ ul {
             font-size: 20px;
             padding: 10px 0;
             color: white;
+        }
+
+        .links button {
+            display: block;
+            font-size: 20px;
+            padding: 10px 0;
+            color: white;
+            margin-left: 12px;
         }
 
         .links.active {
