@@ -140,7 +140,7 @@
 
 
       header.scrolled .links a:hover {
-        color: #0084a2; /* Color de los enlaces cuando se desplaza */
+        color: linear-gradient(to right, #000B18 15%, #00264D 100%);; /* Color de los enlaces cuando se desplaza */
       }
 
       li {
@@ -167,7 +167,7 @@
 
       .twotwo .subtitle {
         background: linear-gradient(to right, #000B18 15%, #00264D 100%);
-        text-shadow: 1px 2px 3px #6cbfc6;
+        text-shadow: 1px 2px 3px #f7feff;
       }
       
       .three {
@@ -431,7 +431,7 @@
       }
 
       .twenty-eight button:hover{
-        background: linear-gradient(to bottom right, #00628b 1%, #0084a2 25%, #00b8bc 100%);
+        background: linear-gradient(to right, #000B18 15%, #00264D 100%);
       }
 
       .thirty {
