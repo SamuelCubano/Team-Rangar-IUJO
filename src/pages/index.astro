@@ -30,7 +30,7 @@
                 <a href="/noticias/">Guía de Detección</a>
                 <a href="/contacto/">Soluciones y Regulaciones</a>
                 <a href="/faqs/">FAQ</a>
-                <button id="lang-toggle" data-lang="es"></button>
+                <button id="lang-toggle" data-lang="en">🇪🇸</button>
             </div>
         </div>
     </header>
@@ -235,42 +235,44 @@
       });
     </script>
     <script>
-      const savedLang = localStorage.getItem('lang');
-      
-      if (savedLang) {
-        document.documentElement.lang = savedLang;
-        const langToggle = document.getElementById('lang-toggle');
-        if (langToggle) {
-          langToggle.textContent = savedLang;
-          langToggle.setAttribute('data-lang', savedLang);
-        }
-      }
+  // 1. Idioma inicial: inglés por defecto si no hay nada guardado
+  const savedLang = localStorage.getItem('lang') || 'en';
+  document.documentElement.lang = savedLang;
 
-        // 3. Cambio de Idioma
   const langToggle = document.getElementById('lang-toggle');
   const elementosTraducibles = document.querySelectorAll('[data-es]');
 
   if (langToggle) {
+    // 2. Inicializar botón con el idioma al que cambiará
+    langToggle.dataset.lang = savedLang;
+    langToggle.textContent = savedLang === 'en' ? '🇪🇸' : 'us';
+
+    // 3. Aplicar traducción inicial según idioma guardado
+    elementosTraducibles.forEach(el => {
+      const text = el.dataset[savedLang];
+      if (text) el.textContent = text;
+    });
+
+    // 4. Evento de cambio de idioma
     langToggle.addEventListener('click', () => {
-      const currentLang = langToggle.dataset.lang || 'es';
+      const currentLang = langToggle.dataset.lang || 'en';
       const newLang = currentLang === 'en' ? 'es' : 'en';
 
+      // Cambiar textos traducibles
       elementosTraducibles.forEach(el => {
         const text = el.dataset[newLang];
-        if (typeof text !== 'undefined') {
-          el.textContent = text;
-        }
+        if (text) el.textContent = text;
       });
 
-      if (newLang === 'es') {
-        langToggle.textContent = 'us';
-      } else {
-        langToggle.textContent = '🇪🇸';
-      }
+      // Actualizar botón (muestra el idioma al que cambiarás)
+      langToggle.textContent = newLang === 'en' ? '🇪🇸' : 'us';
       langToggle.dataset.lang = newLang;
+
+      // Guardar preferencia
       localStorage.setItem('lang', newLang);
+      document.documentElement.lang = newLang;
     });
   }
-    </script>
+</script>
   </body>
 </html>

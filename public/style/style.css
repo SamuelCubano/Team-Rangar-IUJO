@@ -85,14 +85,6 @@
         font-style: italic;
       }
 
-      .link-logo {
-        display: flex;
-        justify-content: center; /* Centrar horizontalmente */
-        align-items: flex-end; /* Alinear al fondo del contenedor */
-        width: 60px;
-        height: 50px;
-      }
-
       .links {
         display: flex;
         justify-content: center; /* Centrar horizontalmente */
