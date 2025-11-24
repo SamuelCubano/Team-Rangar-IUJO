@@ -74,13 +74,6 @@ letter-spacing: 1px;
 font-style: italic;
 }
 
-.link-logo {
-display: flex;
-justify-content: center; /* Centrar horizontalmente */
-align-items: flex-end; /* Alinear al fondo del contenedor */
-width: 60px;
-height: 50px;
-}
 
 .links {
 display: flex;
@@ -100,24 +93,34 @@ padding-right: 10px;
 transition: 0.3s;
 }
 
+      .links button {
+        background-color: rgba(255, 0, 0, 0);
+        color: white;
+        border: none;
+        font-size: 18px;
+        cursor: pointer;
+        border-radius: 25px;
+        transition: background 0.5s ease-in-out, transform 0.3s ease-in-out;
+      }
+
+      .links button:hover {
+        transform: scale(1.10); /* Efecto de ligera expansión */
+      }
+
 .links a:hover {
 transform: scale(1.10); /* Efecto de ligera expansión */
 }
 
-.links a:not(:has(.link-logo)):hover {
-color: black; /* Color de los enlaces al pasar el cursor */
-border: solid 1px #061d25;
-background-color: white;
-border-radius: 15px;
-}
+
+            header.scrolled .links button{
+        color: black; /* Color de los enlaces cuando se desplaza */
+      }
+
 
 header.scrolled .links a {
 color: black; /* Color de los enlaces cuando se desplaza */
 }
 
-header.scrolled .link-logo image {
-background-image: url(/src/images/Logo\ dark.png);
-}
 
 header.scrolled .links a:hover {
 color: #1A375E; /* Color de los enlaces cuando se desplaza */
@@ -140,7 +143,7 @@ background-size: cover;
 .twotwo {
 grid-column: 3 / 10;
 grid-row: 8 / 13;
-background: linear-gradient(to right, #000B18 15%, #00264D 100%);
+background: red;
 border-radius: 15px;
 color: white;
 }
@@ -148,7 +151,7 @@ color: white;
 .three {
 grid-column: 1 / 22;
 grid-row: 16 / 18;
-background: #255079;
+background: red;
 text-align: center ;
 }
 
@@ -162,7 +165,7 @@ background-size: cover;
 .five {
 grid-column: 5 / 10;
 grid-row: 19 / 24;
-background-color: #1A375E;
+background-color: red;
 border-radius: 15px;
 border: 1px solid gray;
 background-size: cover;
@@ -172,7 +175,7 @@ background-image: url("/src/images/Centro\ Lido.jpg")
 .six {
 grid-column: 6 / 11;
 grid-row: 25 / 30;
-background-color: #1A375E;
+background-color: red;
 border: 1px solid gray;
 border-radius: 15px;
 background-size: cover;
@@ -181,7 +184,8 @@ background-image: url("/src/images/consultorio.jpg")
 
 .seven {
 grid-column: 12 / 20;
-grid-row: 19 / 30;        
+grid-row: 19 / 30;
+background-color: red;       
 }
 
 .eight {
@@ -316,7 +320,7 @@ transform: scale(1.05); /* Efecto de ligera expansión */
 .nineteen {
 grid-column: 1 / 22;
 grid-row: 32 / 36;;
-background-color: #1A375E;
+background-color: red;
 text-align: center;
 }
 
@@ -333,7 +337,7 @@ text-align: center;
 }
 
 .footer {
-background-color: #061d25;
+background-color: red;
 color: white;
 padding: 30px 20px;
 text-align: left;
@@ -386,7 +390,7 @@ to {
 }
 }
 
-.three, .five, .six{
+.three, .six{
 view-timeline-name: --image;
 view-timeline-axis: block;
 
@@ -444,59 +448,9 @@ grid-column: 11 / 19;
 }
 }
 
-.menu-toggle, .close-menu {
-    display: none;
-    background: none;
-    border: none;
-    font-size: 24px;
-    color: black;
-    cursor: pointer;
-}
-
 /* RESPONSIVE 800px*/
 @media (max-width: 800px) {
 
-.menu-toggle {
-        display: block;
-    }
-
-
-    header.scrolled .links a {
-    color: #e5e5e5; /* Color de los enlaces cuando se desplaza */
-    }
-    .links {
-        position: fixed;
-        top: 0;
-        left: -100%;
-        width: 250px;
-        height: 100vh;
-        background-color: rgba(0, 0, 0, 0.9);
-        flex-direction: column;
-        align-items: start;
-        padding: 60px 20px;
-        transition: left 0.3s ease-in-out;
-    }
-
-    .links a {
-        display: block;
-        font-size: 20px;
-        padding: 10px 0;
-        color: white;
-    }
-
-    .links.active {
-        left: 0;
-        color: white;
-    }
-
-    .close-menu {
-        display: block;
-        position: absolute;
-        top: 10px;
-        right: 15px;
-        font-size: 28px;
-        color:white;
-    }
 
     .sd {
         font-size: 14px;
@@ -602,8 +556,77 @@ animation-fill-mode: both;
 }
 }
 
-/* RESPONSIVE de 600px*/
-@media (max-width: 600px) {
+/*  RESPONSIVE 600px   */
+
+.menu-toggle, .close-menu {
+        display: none;
+        background: none;
+        border: none;
+        font-size: 24px;
+        color: black;
+        cursor: pointer;
+    }
+
+    @media (max-width: 600px) { 
+
+        .menu-toggle {
+            display: block;
+            color: white;
+        }
+
+          header.scrolled .menu-toggle {
+        color: black; /* Color de los enlaces cuando se desplaza */
+      }
+
+        header.scrolled .links a {
+        color: #e5e5e5; /* Color de los enlaces cuando se desplaza */
+      }
+
+             header.scrolled .links button{
+        color:#e5e5e5; /* Color de los enlaces cuando se desplaza */
+      }
+
+        .links {
+            position: fixed;
+            top: 0;
+            left: -100%;
+            width: 250px;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.9);
+            flex-direction: column;
+            align-items: start;
+            padding: 60px 20px;
+            transition: left 0.3s ease-in-out;
+        }
+
+        .links a {
+            display: block;
+            font-size: 20px;
+            padding: 10px 0;
+            color: white;
+        }
+
+        .links button {
+            display: block;
+            font-size: 20px;
+            padding: 10px 0;
+            color: white;
+            margin-left: 12px;
+        }
+
+        .links.active {
+            left: 0;
+            color: white;
+        }
+
+        .close-menu {
+            display: block;
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 28px;
+            color:white;
+        }
 .two {
     grid-row: 1 / 13;
 }
@@ -638,7 +661,7 @@ animation-fill-mode: both;
     margin: 15px;
 }
 .seven {
-    grid-row: 15 / 30;
+    grid-row: 15 / 26   ;
     margin: 0;
 }
 

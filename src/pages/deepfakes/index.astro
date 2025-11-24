@@ -7,7 +7,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Index de IMHC</title>
+    <title>Deepfakes | Team Rangar</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Oxanium:wght@200..800&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rouge+Script&display=swap" rel="stylesheet">
@@ -17,19 +17,20 @@
   <body>
     <div class="wrapper">
 
-      <!-- Header Barra -->
-      <header>
-        <p class="sd">Av. Francisco de Miranda, Edif. Centro Lido, torre E piso 12, El Rosal, Caracas 1060, Miranda</p>
+          <header>
+        <p class="sd" data-es="Equipo Rangar" data-en="Team Rangar">Team Rangar</p>
         <div id="elements">
             <button class="menu-toggle" id="menuToggle">☰</button> <!-- Botón de hamburguesa -->
             <div class="links" id="menu">
                 <button class="close-menu" id="closeMenu">✖</button> <!-- Botón de cerrar -->
-                <a href="/">Nosotros</a>
-                <a href="/servicios/">Servicios</a>
-                <a href="/telemedicina/">Telemedicina</a>
-                <a href="/noticias/">Noticias</a>
-                <a href="/contacto/">Contacto</a>
-                <a href="/faqs/">Preguntas Frecuentes</a>
+                <a href="/"><i class="fa-solid fa-house"></i></a>
+                <a href="/deepfakes/" data-es="Deepfakes" data-en="Deepfakes">Deepfakes</a>
+                <a href="/telemedicina/ " data-es="Impacto y Riesgo" data-en="Impact and Risk">Impacto y Riesgo</a>
+                <a href="/noticias/" data-es="Guía de Detección" data-en="Detection Guide">Guía de Detección</a>
+                <a href="/contacto/" data-es="Soluciones y Regulaciones" data-en="Solutions and Regulations">Soluciones y Regulaciones</a>
+                <a href="/faqs/" data-es="Preguntas Frecuentes
+                " data-en="FAQS">FAQS</a>
+                <button id="lang-toggle" data-lang="en"  title="Cambiar idioma">🇪🇸</button>
             </div>
         </div>
     </header>
@@ -144,5 +145,45 @@
         }
       });
     </script>
+     <script>
+  // 1. Idioma inicial: inglés por defecto si no hay nada guardado
+  const savedLang = localStorage.getItem('lang') || 'en';
+  document.documentElement.lang = savedLang;
+
+  const langToggle = document.getElementById('lang-toggle');
+  const elementosTraducibles = document.querySelectorAll('[data-es]');
+
+  if (langToggle) {
+    // 2. Inicializar botón con el idioma al que cambiará
+    langToggle.dataset.lang = savedLang;
+    langToggle.textContent = savedLang === 'en' ? '🇪🇸' : '🇺🇸';
+
+    // 3. Aplicar traducción inicial según idioma guardado
+    elementosTraducibles.forEach(el => {
+      const text = el.dataset[savedLang];
+      if (text) el.textContent = text;
+    });
+
+    // 4. Evento de cambio de idioma
+    langToggle.addEventListener('click', () => {
+      const currentLang = langToggle.dataset.lang || 'en';
+      const newLang = currentLang === 'en' ? 'es' : 'en';
+
+      // Cambiar textos traducibles
+      elementosTraducibles.forEach(el => {
+        const text = el.dataset[newLang];
+        if (text) el.textContent = text;
+      });
+
+      // Actualizar botón (muestra el idioma al que cambiarás)
+      langToggle.textContent = newLang === 'en' ? '🇪🇸' : '🇺🇸';
+      langToggle.dataset.lang = newLang;
+
+      // Guardar preferencia
+      localStorage.setItem('lang', newLang);
+      document.documentElement.lang = newLang;
+    });
+  }
+</script>
   </body>
 </html>
