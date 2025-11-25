@@ -135,15 +135,18 @@ margin: 10px;
 grid-column: 1 / 22;
 grid-row: 1 / 16; 
 background-color: linear-gradient(to right, #000B18 15%, #00264D 100%);;
-background-image: url(/src/images/entrada.jpg);
+background-image: url(/public/img/Gemini_Generated_Image_c929dkc929dkc929.png);
 background-size: cover;
 
 }
 
 .twotwo {
 grid-column: 3 / 10;
-grid-row: 8 / 13;
-background: red;
+grid-row: 4 / 13;
+background-color: rgba(153, 153, 153, 0.4); /* Blanco semi-transparente (40% opacidad) */
+backdrop-filter: blur(8px); 
+  -webkit-backdrop-filter: blur(8px);
+border: 3px solid skyblue;
 border-radius: 15px;
 color: white;
 }
@@ -163,7 +166,7 @@ background-size: cover;
 }
 
 .five {
-grid-column: 5 / 10;
+grid-column: 3 / 10;
 grid-row: 19 / 24;
 background-color: red;
 border-radius: 15px;
@@ -173,7 +176,7 @@ background-image: url("/src/images/Centro\ Lido.jpg")
 }
 
 .six {
-grid-column: 6 / 11;
+grid-column: 3 / 11;
 grid-row: 25 / 30;
 background-color: red;
 border: 1px solid gray;
@@ -190,8 +193,8 @@ background-color: red;
 
 .eight {
 grid-column: 12 / 20;
-grid-row: 29;
-background: #1A375E;
+grid-row: 25 / 30;
+border: 3px solid #004757;
 text-align: center;
 padding-bottom: 20px;
 border-radius: 30px;
