@@ -674,6 +674,7 @@ animation-fill-mode: both;
 
 .twotwo {
     grid-column: 1 / 22;
+    grid-row: 8 / 13;
     border-radius: 0;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
