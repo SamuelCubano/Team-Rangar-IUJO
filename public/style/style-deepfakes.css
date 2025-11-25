@@ -135,7 +135,7 @@ margin: 10px;
 grid-column: 1 / 22;
 grid-row: 1 / 16; 
 background-color: linear-gradient(to right, #000B18 15%, #00264D 100%);;
-background-image: url(/public/img/Gemini_Generated_Image_c929dkc929dkc929.png);
+background-image: url(../img/fondodeepfakes2.png);
 background-size: cover;
 
 }
@@ -674,7 +674,7 @@ animation-fill-mode: both;
 
 .twotwo {
     grid-column: 1 / 22;
-    grid-row: 8 / 13;
+    grid-row: 7 / 13;
     border-radius: 0;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
