@@ -36,7 +36,7 @@ header.scrolled {
 background-color: #e5e5e5; /* Fondo blanco cuando se desplaza */
 color: black;
 box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.25);
--webkit-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.25);
+-webkit-box-shadow: 0px 6px 5px 0px rgba(135, 207, 235, 0.555);
 }
 
 .sd {
@@ -154,52 +154,52 @@ color: white;
 .three {
 grid-column: 1 / 22;
 grid-row: 16 / 18;
-background: red;
+    background: linear-gradient(to bottom, #031933 15%, rgb(34, 111, 255) 100%);
 text-align: center ;
 }
 
 .four {
 grid-column: 1 / 22;
 grid-row: 28 / 32;
-background-image: url(/src/pages/contacto/images/Banner\ Fondo\ Transparente.png);
 background-size: cover;
 }
 
 .five {
 grid-column: 3 / 10;
 grid-row: 19 / 24;
-background-color: red;
-border-radius: 15px;
-border: 1px solid gray;
-background-size: cover;
-background-image: url("/src/images/Centro\ Lido.jpg")
 }
 
 .six {
 grid-column: 3 / 11;
 grid-row: 25 / 30;
-background-color: red;
-border: 1px solid gray;
-border-radius: 15px;
-background-size: cover;
-background-image: url("/src/images/consultorio.jpg")
 }
 
 .seven {
 grid-column: 12 / 20;
 grid-row: 19 / 30;
-background-color: red;       
+margin-bottom: 130px; 
+}
+
+.info-list li {
+margin: 20px;
+margin-bottom: 0;
+font-size: 18px;
+color: white;
+list-style-type: disc;
 }
 
 .eight {
-grid-column: 12 / 20;
-grid-row: 25 / 30;
-border: 3px solid #004757;
+display: block;
+height: 39%;
+border: 3px solid skyblue;
+background: url(../img/Gemini_Generated_Image_3n894q3n894q3n89\ \(1\).png);
+background-size: cover;
 text-align: center;
 padding-bottom: 20px;
 border-radius: 30px;
 color: white ;
 margin: 0;
+margin-top: 0;
 }
 
 .redes {
@@ -323,7 +323,8 @@ transform: scale(1.05); /* Efecto de ligera expansión */
 .nineteen {
 grid-column: 1 / 22;
 grid-row: 32 / 36;;
-background-color: red;
+background: linear-gradient(to bottom right, rgb(50, 112, 228), rgb(110, 214, 255));
+
 text-align: center;
 }
 
@@ -340,7 +341,7 @@ text-align: center;
 }
 
 .footer {
-background-color: red;
+background-color: #031933;
 color: white;
 padding: 30px 20px;
 text-align: left;
@@ -393,7 +394,7 @@ to {
 }
 }
 
-.three, .six{
+.three, .eight{
 view-timeline-name: --image;
 view-timeline-axis: block;
 
@@ -503,6 +504,7 @@ grid-column: 11 / 19;
         grid-row: 31 /36;
         grid-column: 1 / 11;
     }
+
     .six {
         grid-row: 31/ 36 ;
         grid-column: 11 / 22;
@@ -651,14 +653,14 @@ animation-fill-mode: both;
 }
 
 .five {
-    grid-row: 26 / 34;
+    grid-row: 26 / 33;
     grid-column: 1 / 22;
     margin: 0;
     margin: 15px;
 }
 
 .six {
-    grid-row:  34 / 42;
+    grid-row:  33 / 41;
     grid-column: 1 / 22;
     margin: 0;
     margin: 15px;
@@ -666,10 +668,12 @@ animation-fill-mode: both;
 .seven {
     grid-row: 15 / 26   ;
     margin: 0;
+    padding-bottom: 210px;
 }
 
 .eight {
-    grid-row: 25;
+    grid-row: 34 / 42;
+    margin: 0;
 }
 
 .twotwo {
@@ -678,7 +682,22 @@ animation-fill-mode: both;
     border-radius: 0;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-}}
+}
+
+.nineteen {
+    grid-row: 42;
+}
+
+.thirty {
+    grid-row: 43;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 28px;
+}
+
+}
 
 /* RESPONSIVE 440px*/
 @media (max-width: 440px) {
