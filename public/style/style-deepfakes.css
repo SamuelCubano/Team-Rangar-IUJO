@@ -154,7 +154,7 @@ color: white;
 .three {
 grid-column: 1 / 22;
 grid-row: 16 / 18;
-    background: linear-gradient(to bottom, #031933 15%, rgb(34, 111, 255) 100%);
+background: linear-gradient(to bottom right, rgb(50, 112, 228), rgb(110, 214, 255));
 text-align: center ;
 }
 
@@ -324,7 +324,6 @@ transform: scale(1.05); /* Efecto de ligera expansión */
 grid-column: 1 / 22;
 grid-row: 32 / 36;;
 background: linear-gradient(to bottom right, rgb(50, 112, 228), rgb(110, 214, 255));
-
 text-align: center;
 }
 
