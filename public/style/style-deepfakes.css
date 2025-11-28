@@ -679,7 +679,7 @@ animation-fill-mode: both;
 }
 
 .thirty {
-    grid-row: 36;
+    grid-row: 36 / 38;
 }
 
 .subtitle {
