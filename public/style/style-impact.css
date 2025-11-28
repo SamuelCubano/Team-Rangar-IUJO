@@ -5,7 +5,8 @@
       body {
         font-family: "Nunito Sans", serif;
         margin: 0;
-        background-color: #e5e5e5;
+                background: linear-gradient(to right, #000B18 15%, #00264D 100%);
+
       }
 
       .wrapper {
@@ -90,7 +91,6 @@ top: 0;
 transition: background-color 0.3s ease ; /* Animación suave del fondo */
 z-index: 1000;
 }
-
 
 .sd {
 text-align: center;
@@ -179,11 +179,19 @@ header.scrolled .links a:hover {
 color: #1A375E; /* Color de los enlaces cuando se desplaza */
 }
 
+.info-list li {
+margin: 20px;
+margin-bottom: 0;
+font-size: 18px;
+color: white;
+list-style-type: disc;
+}
+
 
       .two {
         grid-column: 1 / 22;
         grid-row: 1 / 13;
-        background-image: url(../nosotros/images/nosotros.png);
+        background-image: url(../img/fondoimpacto.png);
         background-size: cover;
       }
 
@@ -220,15 +228,14 @@ color: #1A375E; /* Color de los enlaces cuando se desplaza */
       .five {
         grid-column: 1 / 22;
         grid-row: 33/ 40  ;
-        background: url(/src/pages/nosotros/images/Banner\ Fondo\ Transparente.png);
         color: white;
         text-align: center;
       }
 
       .six {
         grid-column: 12 / 20;
-        grid-row: 17/ 22;
-        background: linear-gradient(to bottom right, #00628b 1%, #0084a2 25%, #00b8bc 100%);
+        grid-row: 16/ 23;
+        background-color: red;
         color: black;
         padding: 30px;
         border-radius: 0 15px 15px 0;
@@ -247,12 +254,10 @@ color: #1A375E; /* Color de los enlaces cuando se desplaza */
       }
 
       .seven {
-        grid-column: 3 / 12;
+        grid-column: 3 / 11;
         grid-row: 16/ 23  ;
-        background: url(../nosotros/images/equipo.png);
-        background-size: cover;
+        background-color: red;
         color: white;
-        text-align: center;
       }
 
       .eight {
