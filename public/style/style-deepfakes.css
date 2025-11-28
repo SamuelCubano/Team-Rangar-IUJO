@@ -142,7 +142,7 @@ background-size: cover;
 
 .twotwo {
 grid-column: 3 / 10;
-grid-row: 4 / 13;
+grid-row: 4 / 10;
 background-color: rgba(153, 153, 153, 0.4); /* Blanco semi-transparente (40% opacidad) */
 backdrop-filter: blur(8px); 
   -webkit-backdrop-filter: blur(8px);
@@ -158,11 +158,6 @@ background: linear-gradient(to bottom right, rgb(50, 112, 228), rgb(110, 214, 25
 text-align: center ;
 }
 
-.four {
-grid-column: 1 / 22;
-grid-row: 28 / 32;
-background-size: cover;
-}
 
 .five {
 grid-column: 3 / 10;
@@ -216,7 +211,7 @@ color: #004757;
 text-decoration: none;
 background-color: #e5e5e5;
 padding: 6px 14px;
-border: solid 1px black;      
+border: solid 1px black;
 border-radius: 50px;
 }
 
@@ -409,11 +404,11 @@ animation-fill-mode: both;
 /* RESPONSIVE TABLET 1250px*/
 @media (max-width: 1250px) {
 .five {
-grid-column: 4 / 10;
+grid-column: 4 / 11;
 }
 
 .six {
-grid-column: 5 / 11;
+grid-column: 4 / 11;
 }
 }
 
@@ -425,17 +420,17 @@ grid-column: 3 / 12;
 }
 
 .five {
-grid-column: 1 / 9;
+grid-column: 1 / 11;
 margin-left: 20px;
 }
 
 .six {
-grid-column: 1 / 9;
+grid-column: 1 / 11;
 margin-left: 20px;
 }
 
 .seven {
-grid-column: 9 / 20;
+grid-column: 11 / 22;
 margin-left: 20px;
 }
 
@@ -639,10 +634,6 @@ animation-fill-mode: both;
     grid-row: 13;
 }
 
-.four {
-    grid-row: 38 / 43;
-}
-
 .nineteen {
     grid-row: 43;
 }
@@ -652,14 +643,14 @@ animation-fill-mode: both;
 }
 
 .five {
-    grid-row: 26 / 33;
+    grid-row: 26 / 30;
     grid-column: 1 / 22;
     margin: 0;
     margin: 15px;
 }
 
 .six {
-    grid-row:  33 / 41;
+    grid-row:  30 / 34;
     grid-column: 1 / 22;
     margin: 0;
     margin: 15px;
@@ -684,11 +675,11 @@ animation-fill-mode: both;
 }
 
 .nineteen {
-    grid-row: 42;
+    grid-row: 35;
 }
 
 .thirty {
-    grid-row: 43;
+    grid-row: 36;
 }
 
 .subtitle {
