@@ -177,7 +177,6 @@
         border-radius: 15px;
         border: 1px solid gray;
         background-size: cover;
-        background-image: url("/src/images/LIDO.png")
       }
 
       .six {
@@ -187,7 +186,6 @@
         border: 1px solid gray;
         border-radius: 15px;
         background-size: cover;
-        background-image: url("/src/images/CONSULTORIO.png");
       }
 
       .seven {
