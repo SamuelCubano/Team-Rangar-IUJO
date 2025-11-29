@@ -735,7 +735,11 @@ ul {
         }
 
         .twotwo .info {
-          margin-bottom: 20px;
+          margin-top: 15px;
+        }
+
+        .twotwo .subtitle {
+          margin: 10px 15px;
         }
 
         .four {
