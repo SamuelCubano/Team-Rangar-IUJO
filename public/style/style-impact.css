@@ -732,7 +732,10 @@ ul {
           grid-column: 1 / 12;
           grid-row: 10;
           margin-right: 0;
-          padding-bottom: 20px;
+        }
+
+        .twotwo .info {
+          margin-bottom: 20px;
         }
 
         .four {
