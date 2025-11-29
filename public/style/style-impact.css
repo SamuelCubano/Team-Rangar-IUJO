@@ -17,21 +17,22 @@
         grid-auto-rows: minmax(52px, auto);
       }
 
-      header {
-        background-color: rgba(0, 0, 0, 0.493);
-        color: white;
-        margin: 0;
-        padding-top: 0;
-        padding-bottom: 10px;
-        margin-bottom: 0;
-        grid-column: 1 / 22;
-        grid-row: 1 ;
-        position: -webkit-sticky; /* Para compatibilidad con Safari */
-        position: sticky;
-        top: 0;
-        transition: background-color 0.3s ease ; /* Animación suave del fondo */
-        z-index: 1000;
-      }
+
+header {
+background-color: rgba(0, 0, 0, 0.493);
+color: white;
+margin: 0;
+padding-top: 0;
+padding-bottom: 10px;
+margin-bottom: 0;
+grid-column: 1 / 22;
+grid-row: 1 ;
+position: -webkit-sticky; /* Para compatibilidad con Safari */
+position: sticky;
+top: 0;
+transition: background-color 0.3s ease ; /* Animación suave del fondo */
+z-index: 1000;
+}
 
       header.scrolled {
         background-color: #e5e5e5; /* Fondo blanco cuando se desplaza */
@@ -76,21 +77,6 @@
       }
 
 
-header {
-background-color: rgba(0, 0, 0, 0.493);
-color: white;
-margin: 0;
-padding-top: 0;
-padding-bottom: 10px;
-margin-bottom: 0;
-grid-column: 1 / 22;
-grid-row: 1 ;
-position: -webkit-sticky; /* Para compatibilidad con Safari */
-position: sticky;
-top: 0;
-transition: background-color 0.3s ease ; /* Animación suave del fondo */
-z-index: 1000;
-}
 
 .sd {
 text-align: center;
@@ -640,12 +626,21 @@ ul {
 
         .menu-toggle {
             display: block;
+            color: white;
         }
 
+          header.scrolled .menu-toggle {
+        color: black; /* Color de los enlaces cuando se desplaza */
+      }
 
         header.scrolled .links a {
         color: #e5e5e5; /* Color de los enlaces cuando se desplaza */
       }
+
+             header.scrolled .links button{
+        color:#e5e5e5; /* Color de los enlaces cuando se desplaza */
+      }
+
         .links {
             position: fixed;
             top: 0;
@@ -736,6 +731,7 @@ ul {
           grid-column: 1 / 12;
           grid-row: 9;
           margin-right: 0;
+          padding-bottom: 15px;
         }
 
         .four {
