@@ -732,6 +732,7 @@ ul {
           grid-column: 1 / 12;
           grid-row: 10;
           margin-right: 0;
+          margin-bottom: 20px;
         }
 
         .four {
