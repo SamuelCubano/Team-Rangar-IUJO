@@ -234,21 +234,16 @@ list-style-type: disc;
 
       .six {
         grid-column: 12 / 20;
-        grid-row: 16/ 23;
+        grid-row: 16/ 22;
         background-color: red;
-        color: black;
-        padding: 30px;
-        border-radius: 0 15px 15px 0;
+       
       }
 
-      .six h2 {
-        font-size: 40px;
+      .six, .seven, .ten, .eleven h2 {
         color: white;
-        text-align: center;
         text-shadow: white 1px 0 10px;
       }
-      .six li {
-        font-size: 19px;
+      .six, .seven li {
         color: white;
         text-shadow: white 1px 0 10px;
       }
@@ -256,68 +251,78 @@ list-style-type: disc;
       .seven {
         grid-column: 3 / 11;
         grid-row: 16/ 23  ;
-        background-color: red;
         color: white;
+        background-color: red;
+        background-size: cover;
       }
 
       .eight {
-        grid-column: 2 / 11;
-        grid-row: 24/ 28  ;
-        color: black;
-        text-align: center;
+        grid-column: 3 / 11;
+        grid-row: 23/ 29 ;
+        background: url(../img/foto2.png);
+        background-size: cover;
+        background-position: center; /* ¡Esto es lo clave para centrarla! */
+        margin-top: 20px;
+        border-radius: 15px;
+        border: solid 3px skyblue;
       }
 
-      .eight p {
-        text-align: left;
-        margin-left: 30px;
-        margin-right: 30px;
-      }
       .nine {
-        grid-column: 11 / 21;
-        grid-row: 24/ 28  ;
-        color: black;
-        text-align: center;
-      }
-      .nine p {
-        text-align: left;
-        margin-left: 30px;
-        margin-right: 30px;
+        grid-column: 12 / 20;
+        grid-row: 22/ 28  ;
+        background: url(../img/foto3.png);
+        background-position: center; /* ¡Esto es lo clave para centrarla! */
+        background-size: cover;
+        border-radius: 15px;
+        border: solid 3px skyblue;
+        margin-top: 20px;
       }
 
       .ten{
-        grid-column: 3 / 12;
-        grid-row: 30 / 38;
-        background: linear-gradient(to bottom right, #00628b 1%, #0084a2 25%, #00b8bc 100%);
-        padding: 30px;
-        border-radius: 15px 0 0 15px;
-      }
-
-      .ten h2 {
-        font-size: 40px;
+        grid-column: 3 / 11;
+        grid-row: 30 / 35;
         color: white;
-        text-align: center;
-        text-shadow: white 1px 0 10px;
-      }
-
-      .ten li {
-        font-size: 19px;
-        color: white;
-        text-shadow: white 1px 0 10px;
-        padding-left: 50px;
+        background: red;
       }
 
       .eleven {
         grid-column: 12 / 20;
-        grid-row: 29 / 39;
-        background-size: cover;
-        text-align: center;
+        grid-row: 29 / 35;
+        color: white;
+        background: red;
+        margin-top: 20px;
       }
+
+      .twelve {
+        grid-column: 3 / 11;
+        grid-row: 35 / 41;
+        background: url(../img/foto4.png);
+        background-size: cover;
+        border-radius: 15px;
+        border: solid 3px skyblue;
+        margin-top: 20px;
+        background-position: center; /* ¡Esto es lo clave para centrarla! */
+      }
+
+      .thirteen {
+        grid-column: 12 / 20;
+        grid-row: 35 /  41;
+        background: url(../img/foto5.png);
+        background-size: cover;
+        border-radius: 15px;
+        border: solid 3px skyblue;
+        margin-top: 20px;
+        background-position: center; /* ¡Esto es lo clave para centrarla! */
+      }
+
       .nineteen {
         grid-column: 1 / 22;
-        grid-row: 40 / 44;
+        grid-row: 42;
         background-color: #ade0de;
         text-align: center;
       }
+
+
 
       .nineteen button:hover {
         background: linear-gradient(to bottom right, #00628b 1%, #0084a2 25%, #00b8bc 100%);
@@ -325,7 +330,7 @@ list-style-type: disc;
 
       .twenty { 
         grid-column: 1 / 22;
-        grid-row: 44 / 46;
+        grid-row: 43;
         background-color: #6cbfc6;
         text-align: center;
       }
@@ -413,7 +418,7 @@ ul {
 	}
 }
 
-.four, .ten{
+.four, .eight, .nine, .twelve, .thirteen {
 	view-timeline-name: --image;
 	view-timeline-axis: block;
 
@@ -455,7 +460,7 @@ ul {
   }
 
   .six {
-  grid-column: 8 / 17;
+  grid-column: 9 / 17;
   grid-row: 12;
   margin: 15px;
   border-radius: 10px;
@@ -465,51 +470,52 @@ ul {
     grid-column: 1 / 9;
     grid-row: 12;
     margin: 15px;
-    margin-right: 41px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
   }
 
   .eight {
     grid-column: 1 / 9;
-    grid-row: 13;
+    grid-row: 13/ 20;
     margin: 15px;
-    margin-right: 30px;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    align-items: center;
+    background-position: center; /* ¡Esto es lo clave para centrarla! */
   }
 
-  .eight .info {
-    margin: 10px
-  }
 
   .nine {
     grid-column: 9 / 17;
-    grid-row: 13;
-    margin: 15px;
-    margin-left: 30px;
+    grid-row: 13 / 20;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-  }
+    background-position: center; /* ¡Esto es lo clave para centrarla! */
 
-  .nine .info {
-    margin: 10px
   }
 
   .ten {
     grid-column: 1 / 9;
-    grid-row: 14;
+    grid-row: 20;
     margin: 15px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
   }
 
   .eleven {
-    grid-column: 8 / 17;
-    grid-row: 14;
+    grid-column: 9 / 17;
+    grid-row: 20;
     margin: 15px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+  }
+
+  .twelve {
+    grid-column: 1 / 9;
+    grid-row: 21 / 28;
+    margin: 15px;
+  }
+
+  .thirteen {
+    grid-column: 9 / 17;
+    grid-row: 21 / 28;
+    margin: 15px;
   }
 
   .five {
@@ -519,41 +525,12 @@ ul {
 
   .nineteen {
     grid-column: 1 / 17;
-    grid-row: 17 / 20;
+    grid-row: 29;
   }
 
   .twenty {
     grid-column: 1 / 17;
-    grid-row: 20 / 21;
-  }
-}
-
-/*      RESPONSIVE PARA TABLET   1024px  */
-
-@media (max-width: 1024px) {
-
-  .nineteen {
-    grid-column: 1 / 17;
-    grid-row: 17 / 21;
-  }
-
-  .twenty {
-    grid-column: 1 / 17;
-    grid-row: 21 / 43;
-  }
-}
-
-/*      RESPONSIVE    1010px  */
-
-@media (max-width: 1010px) {
-
-  .twenty {
-    grid-column: 1 / 17;
-    grid-row: 21
-  }
-
-  .slogan {
-    font-size: 25px;
+    grid-row: 30;
   }
 }
 
@@ -599,13 +576,13 @@ ul {
   }
 
   .seven {
-    grid-column: 1 / 7;
+    grid-column: 1 / 12;
     grid-row: 12;
   }
 
   .six {
-    grid-column: 6 / 12;
-    grid-row: 12;
+    grid-column: 1 / 12;
+    grid-row: 21 / 23;
     padding-right: 10px;
   }
 
@@ -614,36 +591,47 @@ ul {
   }
 
   .eight {
-    grid-column: 1 / 6;
-    grid-row: 13;
-    margin:0;
-  }
-
-  .eight .info {
-    margin: 0;
-    margin-left: 10px;
+    grid-column: 1 / 12;
+    grid-row: 13 / 20;
   }
 
   .nine {
-    grid-column: 7 / 12;
-    grid-row: 13;
-    margin: 0;
-  }
-
-  .nine .info {
-    margin: 0;
+    grid-column: 1 / 12;
+    grid-row: 23 / 30;
+    margin: 15px;
   }
 
   .ten {
-    grid-column: 1 / 7;
-    grid-row: 14;
+    margin-top: 60px; ;
+    grid-column: 1 / 12;
+    grid-row: 30 / 35;
   }
 
   .eleven {
-    grid-column: 6 / 12;
-    grid-row: 14;
+    margin-top: 60px;
+    grid-column: 1 / 12;
+    grid-row: 42 / 46;
   }
+
+  .twelve {
+    grid-column: 1 / 12;
+    grid-row: 35/ 42;
+  }
+
+  .thirteen {
+    grid-column: 1 / 12;
+    grid-row: 46 / 53;
 }
+
+.nineteen {
+  grid-column: 1 / 12;
+  grid-row: 54;
+}
+
+.twenty {
+  grid-column: 1 / 12;
+  grid-row: 55;
+}}
 
 /*  RESPONSIVE 600px   */
 
@@ -743,142 +731,21 @@ ul {
         .footer-bottom {
             font-size: 14px;
         }
-
-        .six {
-            grid-column: 1 / 12;
-            grid-row: 11 /13;
-            
-        }
-
-        .seven {
-            grid-column: 1 / 12;
-            grid-row: 13 / 18;
-            margin: 15px;
-            border-radius: 10px;
-        }
-
-        .eight {
-            grid-column: 1 / 12;
-            grid-row: 18;
-            padding: 20px;
-        }
-
-        .nine {
-            grid-column: 1 / 12;
-            grid-row: 19;
-            padding: 20px;
-        }
-
-        .ten {
-            grid-column: 1 / 6;
-            grid-row: 20;
-            padding: 20px;
-        }
-
-        .ten li {
-            font-size: 16px;
-            padding: 0;
-        }
-
-        .eleven {
-            grid-column: 5 / 12;
-            grid-row: 20;
-            padding: 20px;
-        }
-
-        .nineteen {
-            grid-column: 1 / 12;
-            grid-row: 23;
-        }
-
-        .twenty {
-            grid-column: 1 / 12;
-            grid-row: 24;
-        }
-
-        .five {
-            grid-column: 1 / 12;
-            grid-row: 20 /23;
-            padding: 20px;
-        }
       }
-
       @media (max-width: 430px) {
 
-        .wrapper {
-          grid-template-columns: repeat(6, 1fr);
-        }
 
         .two {
-          grid-column: 1 / 7;
+          grid-column: 1 / 12;
           grid-row: 1 / 11;
         }
 
         .twotwo {
-          grid-column: 1 / 7;
+          grid-column: 1 / 12;
           grid-row: 7 / 10;
-          margin: 0;
-          border-radius: 0;
-          border-top-left-radius: 15px;
-          border-top-right-radius: 15px;
           
         }
 
-        .three {
-          grid-column: 1 / 7;
-          grid-row: 10;
-          margin: 0;
-          border-radius: 0;
-        }
-
-        .four {
-          grid-column: 1 / 7;
-          grid-row: 11;
-          margin: 0;
-          border-radius: 0;
-        }
-
-        .six {
-          grid-column: 1 / 7;
-          grid-row: 12;
-          margin: 0;
-          border-radius: 0;
-          border-bottom-left-radius: 10px;
-          border-bottom-right-radius: 10px;
-        }
-
-        .seven {
-          border: solid grey 1px;
-          background-size: cover;
-        }
-
-        .ten {
-          grid-column: 1 / 7 ;
-          border-radius: 10px;
-        }
-
-        .eleven {
-          grid-column: 1 /7;
-          grid-row: 21 / 26;
-          border: solid grey 1px;
-          border-radius: 10px;
-          background-size: cover;
-        }
-
-        .five {
-          grid-column: 1 / 7;
-          grid-row: 24 / 27;
-        }
-
-        .nineteen {
-          grid-column: 1 / 7;
-          grid-row: 27;
-        }
-
-        .twenty {
-          grid-column: 1 / 7;
-          grid-row: 28;
-        }
 
         .sd {
       padding: 10px;
