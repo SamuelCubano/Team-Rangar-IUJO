@@ -742,10 +742,24 @@ ul {
 
         .twotwo {
           grid-column: 1 / 12;
-          grid-row: 7 / 10;
-          
+          grid-row: 10 / 10;
+          margin-right: 0;
         }
 
+        .four {
+          grid-column: 1 / 12;
+          grid-row: 11;
+          margin-bottom: 30px;
+        }
+
+        .seven, .six, .ten, .eleven   {
+          margin-left: 0;
+          margin-right: 0;
+        }
+
+        .info-list li {
+              margin-left: 0;
+        }
 
         .sd {
       padding: 10px;
