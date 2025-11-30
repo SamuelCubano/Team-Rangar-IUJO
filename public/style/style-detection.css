@@ -222,7 +222,6 @@ list-style-type: disc;
       .six {
         grid-column: 5 / 18;
         grid-row: 26 / 31;
-        background-color: red;
       }
 
       .six, .seven, .ten, .eleven h2 {
@@ -237,7 +236,6 @@ list-style-type: disc;
       .seven {
         grid-column: 5 / 18;
         grid-row: 16/ 20  ;
-        background-color: red;
       }
 
       .eight {
@@ -265,7 +263,6 @@ list-style-type: disc;
       .ten{
         grid-column:5 / 18;
         grid-row: 37 / 42;
-        background-color: red;
       }
 
       .eleven {
