@@ -622,8 +622,9 @@ ul {
 
         .twotwo {
           grid-column: 1 / 12;
-          grid-row: 9 / 11;
+          grid-row: 8 / 11;
           margin-right: 0;
+          padding-bottom: 20px;
         }
 
         .twotwo .info {
