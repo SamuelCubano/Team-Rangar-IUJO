@@ -622,7 +622,7 @@ ul {
 
         .twotwo {
           grid-column: 1 / 12;
-          grid-row: 10;
+          grid-row: 8 / 11;
           margin-right: 0;
         }
 
