@@ -173,17 +173,17 @@
       .five {
         grid-column: 12 / 18;
         grid-row: 29 / 32;
-        background-color: red;
+        background-color: rgba(135, 207, 235, 0.514);
         border-radius: 15px;
-        border: 1px solid gray;
+        border: 3px solid skyblue;
         background-size: cover;
       }
 
       .six {
         grid-column: 5 / 11;
         grid-row: 26 / 29;
-        background-color: red;
-        border: 1px solid gray;
+        background-color: rgba(248, 175, 248, 0.5);
+        border: 3px solid rgb(221, 160, 221);
         border-radius: 15px;
         background-size: cover;
       }
@@ -191,14 +191,14 @@
       .seven {
         grid-column: 5 / 18;
         grid-row: 19 / 25;
-        background-color: red;
+        text-align: center;
       }
 
       .eight {
         grid-column: 5 / 11;
         grid-row: 32 / 35;
-        background-color: red;
-        border: 1px solid gray;
+        background-color: rgba(210, 180, 140, 0.5);
+        border: 3px solid tan;
         border-radius: 15px;
       }
 
@@ -344,6 +344,7 @@
         grid-row: 59 / 61;
         text-align: center;
         background-color: red;
+        margin-bottom: 30px;
       }
 
       .twenty-one p {
@@ -938,6 +939,8 @@ ul {
     .two {
       grid-column: 1 / 11;
       grid-row: 1 / 11;
+      background-position-x: center;
+      background-position-y: center;
     }
 
     .twotwo {
@@ -986,23 +989,28 @@ ul {
       grid-column: 1 / 11;
       grid-row: 31 / 34;
       margin-top: 12px;
+      padding: 100px;
     }
 
 
     .twelve {
       grid-column: 1 / 11;
       grid-row: 34 / 37;
+      padding: 100px;
     }
 
 
     .fourteen {
       grid-column: 1 / 11;
       grid-row: 37 / 40;
+      margin-top: 12px;
+      padding: 100px;
     }
 
     .fifteen {
       grid-column: 1 / 11;
       grid-row: 40 /43;
+      padding: 100px;
     }
 
     .sixteen {
