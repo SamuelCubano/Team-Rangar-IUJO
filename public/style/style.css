@@ -945,6 +945,11 @@ ul {
       border-bottom-right-radius: 0;
     }
 
+    .twotwo .subtitle {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
     .three {
       grid-column: 1 / 11;
       grid-row: 11;
