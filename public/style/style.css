@@ -222,22 +222,20 @@
         grid-column: 4 / 11;
         grid-row: 38 / 44;
         margin: 12px;
-        background: red;
-        border: solid 1px grey;
-        text-align: center;
-        border-bottom-left-radius: 15px;
-        border-bottom-right-radius: 15px;
+        background: url(../img/foto6.png);
+        background-size: cover;
+        background-position-x: center;
+        background-position-y: center;
       }
 
       .twelve {
         grid-column: 12 / 19;
         grid-row: 38 / 44;
         margin: 12px;
-        background: red;
-        border: solid 1px grey;
-        text-align: center;
-        border-bottom-left-radius: 15px;
-        border-bottom-right-radius: 15px;
+        background: url(../img/foto7.png);
+        background-size: cover;
+        background-position-x: center;
+        background-position-y: center;
       }
 
 
@@ -245,22 +243,20 @@
         grid-column: 4 / 11;
         grid-row: 44 / 50;
         margin: 12px;
-        background: red;
-        border: solid 1px grey;
-        text-align: center;
-        border-bottom-left-radius: 15px;
-        border-bottom-right-radius: 15px;
+        background: url(../img/foto8.png);
+        background-size: cover;
+        background-position-x: center;
+        background-position-y: center;
       }
 
       .fifteen {
         grid-column: 12  / 19;
         grid-row: 44   / 50;
         margin: 12px;
-        background: red;
-        border: solid 1px grey;
-        text-align: center;
-        border-bottom-left-radius: 15px;
-        border-bottom-right-radius: 15px;
+        background: url(../img/foto5.png);
+        background-size: cover;
+        background-position-x: center;
+        background-position-y: center;
       } 
 
       .servicios-nombre {
@@ -327,7 +323,7 @@
       .nineteen {
         grid-column: 1 / 22;
         grid-row: 85 / 89;;
-        background-color: red;
+        background-color: #ade0de;
         text-align: center;
       }
 
@@ -338,7 +334,6 @@
       .twenty {
         grid-column: 1 / 22;
         grid-row: 80 / 85;
-        background: url(/src/images/Banner\ Fondo\ Transparente.png);
         background-size: cover;
       }
 
@@ -355,59 +350,47 @@
         text-align: left;
       }
 
-      .twenty-two {
-        grid-column: 4 / 11;
-        grid-row: 61 / 66;
-        margin: 12px;
-        background-color: red;
-        border: solid 1px #061d25;
-        text-align: center;
-      }
+     .twenty-two {
+    grid-column: 4 / 11;
+    grid-row: 62 / 68;
+  }
 
-      .twenty-three {
-        grid-column: 4 / 11;
-        grid-row: 66 / 71;
-        margin: 12px;
-        background-color: red;
-        border: solid 1px #061d25;
-        text-align: center;
-      }
+  .twenty-three {
+    grid-column: 12 / 19;
+    grid-row: 62 / 68;
+    background: url(../img/foto9.png);
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+  }
 
-      .twenty-four {
-        grid-column: 11 / 19;
-        grid-row: 61 / 71;
-        margin: 12px;
-        background-color: red;
-        border: solid 1px #061d25;
-        text-align: center;
-      }
+  .twenty-four {
+    grid-column: 4 / 11;
+    grid-row: 69 / 75;
+  }
 
-      .twenty-five {
-        grid-column: 4 / 12;
-        grid-row: 71 / 81 ;
-        margin: 12px;
-        background-color: red;
-        border: solid 1px #061d25;
-        text-align: center;
-      }
+  .twenty-five {
+    grid-column: 12 / 19;
+    grid-row: 69 / 75;
+    background: url(../img/foto10.png);
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+  }
 
-      .twenty-six {
-        grid-column: 12 / 19;
-        grid-row: 71 / 76;
-        margin: 12px;
-        background-color: red;
-        border: solid 1px #061d25;
-        text-align: center;
-      }
+  .twenty-six {
+    grid-column: 4 / 11;
+    grid-row: 76 / 82;
+  }
 
-      .twenty-seven {
-        grid-column: 12 / 19;
-        grid-row: 76 / 81;
-        margin: 12px;
-        background-color: red;
-        border: solid 1px #061d25;
-        text-align: center;
-      }
+  .twenty-seven {
+    grid-column: 12 / 19;
+    grid-row: 76 / 82;
+    background: url(../img/foto11.png);
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+  }
 
       .twenty-eight {
         grid-column: 6 / 17;
@@ -415,6 +398,7 @@
         text-align: center;
         background-color: red;
         border-radius: 15px;
+        margin-top: 50px;
       }
 
       .twenty-eight button:hover{
@@ -424,12 +408,12 @@
       .thirty {
         grid-column: 1 / 22;
         grid-row: 89 / 95;
-        background-color: red;
+        background-color: #6cbfc6;
         text-align: center;
       }
 
       .footer {
-    background-color: red;
+    background-color: #061d25;
     color: white;
     padding: 30px 20px;
     text-align: left;
