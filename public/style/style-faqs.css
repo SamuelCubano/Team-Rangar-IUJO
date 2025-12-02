@@ -214,12 +214,7 @@ color: #1A375E; /* Color de los enlaces cuando se desplaza */
         padding: 30px;
       }
 
-      .seven {
-        grid-column: 1 / 22;
-        grid-row: 27 / 33;
-        background: url(/src/pages/faqs/images/Banner\ Fondo\ Transparente.png);
-        background-size: cover;
-      }
+      
       
       .nineteen {
         grid-column: 1 / 22;
@@ -459,14 +454,23 @@ ul {
   @media (max-width: 800px) {
     
 
-        .menu-toggle {
+          .menu-toggle {
             display: block;
+            color: white;
         }
 
+          header.scrolled .menu-toggle {
+        color: black; /* Color de los enlaces cuando se desplaza */
+      }
 
         header.scrolled .links a {
         color: #e5e5e5; /* Color de los enlaces cuando se desplaza */
       }
+
+             header.scrolled .links button{
+        color:#e5e5e5; /* Color de los enlaces cuando se desplaza */
+      }
+
         .links {
             position: fixed;
             top: 0;
@@ -485,6 +489,14 @@ ul {
             font-size: 20px;
             padding: 10px 0;
             color: white;
+        }
+
+        .links button {
+            display: block;
+            font-size: 20px;
+            padding: 10px 0;
+            color: white;
+            margin-left: 12px;
         }
 
         .links.active {
@@ -557,7 +569,7 @@ ul {
         
         .twotwo {
           grid-column: 1 / 21;
-          grid-row: 7 / 9;
+          grid-row: 6 / 9;
           border-radius: 0;
           border-top-left-radius: 15px;
           border-top-right-radius: 15px;
@@ -570,7 +582,7 @@ ul {
         }
 
         .four{
-          grid-row: 11;
+          grid-row: 9;
         }
         .five {
           grid-column: 1 / 21;
@@ -580,7 +592,7 @@ ul {
 
         .six {
           grid-column: 1 /21;
-          grid-row: 12 / 18;
+          grid-row: 11 / 18;
           padding: 10px;
         }
 
