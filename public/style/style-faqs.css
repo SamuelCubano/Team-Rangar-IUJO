@@ -569,7 +569,7 @@ ul {
         
         .twotwo {
           grid-column: 1 / 21;
-          grid-row: 6 / 9;
+          grid-row: 7 / 10;
           border-radius: 0;
           border-top-left-radius: 15px;
           border-top-right-radius: 15px;
@@ -582,7 +582,7 @@ ul {
         }
 
         .four{
-          grid-row: 9;
+          grid-row: 10;
         }
         .five {
           grid-column: 1 / 21;
