@@ -1,0 +1,610 @@
+     * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Nunito Sans", serif;
+        margin: 0;
+        background: linear-gradient(to right, #000B18 15%, #00264D 100%);
+      }
+
+      .wrapper {
+        margin: 0;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(21, 1fr);
+        grid-auto-rows: minmax(52px, auto);
+      }
+
+     
+header {
+background-color: rgba(0, 0, 0, 0.493);
+color: white;
+margin: 0;
+padding-top: 0;
+padding-bottom: 10px;
+margin-bottom: 0;
+grid-column: 1 / 22;
+grid-row: 1 ;
+position: -webkit-sticky; /* Para compatibilidad con Safari */
+position: sticky;
+top: 0;
+transition: background-color 0.3s ease ; /* Animación suave del fondo */
+z-index: 1000;
+}
+
+      header.scrolled {
+        background-color: #e5e5e5; /* Fondo blanco cuando se desplaza */
+        color: black;
+        box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.25);
+        -webkit-box-shadow: 0px 6px 5px 0px rgba(135, 207, 235, 0.555);
+
+      }
+
+      .sd {
+        text-align: center;
+        margin: 0;
+        color: white;
+        background: linear-gradient(to bottom right, #00628b 1%, #0084a2 25%, #00b8bc 100%);
+        padding-bottom: 10px;
+        padding-top: 10px;
+      }
+
+      .info {
+        margin: 0;
+        padding: 0;
+        font-size: 20px;
+        margin: 15px;
+      }
+
+      .subtitle {
+        font-size: 40px;
+        margin: 20px 15px;
+      }
+
+      h3 {
+        font-size: 26px;
+        margin: 20px 15px;
+      }
+
+      .slogan {
+        font-size: 30px;
+        margin: 20px 15px;
+        color: white;
+        font-family: "PT Serif", serif;
+        letter-spacing: 1px;
+        font-style: italic;
+      }
+
+
+
+.sd {
+text-align: center;
+margin: 0;
+color: white;
+background: linear-gradient(to right, #000B18 15%, #00264D 100%);
+padding-bottom: 10px;
+padding-top: 10px;
+}
+
+.info {
+margin: 0;
+padding: 0;
+font-size: 20px;
+margin: 15px;
+}
+
+.subtitle {
+font-size: 40px;
+margin: 20px 15px;
+}
+
+h3 {
+font-size: 26px;
+margin: 20px 15px;
+}
+
+.slogan {
+font-size: 30px;
+margin: 20px 15px;
+color: white;
+font-family: "PT Serif", serif;
+letter-spacing: 1px;
+font-style: italic;
+}
+
+
+.links {
+display: flex;
+justify-content: center; /* Centrar horizontalmente */
+align-items: flex-end; /* Alinear al fondo del contenedor */
+height: 50px; /* Ajusta la altura según sea necesario */
+margin-top: 10px;
+}
+
+.links a {
+margin: 0 10px; /* Espaciado entre enlaces */
+color: white;
+font-size: 19px;  
+text-decoration: none;
+padding-left: 10px;
+padding-right: 10px;
+transition: 0.3s;
+}
+
+      .links button {
+        background-color: rgba(255, 0, 0, 0);
+        color: white;
+        border: none;
+        font-size: 18px;
+        cursor: pointer;
+        border-radius: 25px;
+        transition: background 0.5s ease-in-out, transform 0.3s ease-in-out;
+      }
+
+      .links button:hover {
+        transform: scale(1.10); /* Efecto de ligera expansión */
+      }
+
+.links a:hover {
+transform: scale(1.10); /* Efecto de ligera expansión */
+}
+
+
+            header.scrolled .links button{
+        color: black; /* Color de los enlaces cuando se desplaza */
+      }
+
+
+header.scrolled .links a {
+color: black; /* Color de los enlaces cuando se desplaza */
+}
+
+
+header.scrolled .links a:hover {
+color: #1A375E; /* Color de los enlaces cuando se desplaza */
+}
+      .two {
+        grid-column: 1 / 22;
+        grid-row: 1 / 14;
+        background: url(../img/fondofaqs.png);
+        background-size: cover;
+      }
+
+      .twotwo {
+        grid-column: 13 / 20;
+        grid-row: 4/ 10  ;
+        background-color: rgba(0, 0, 0, 0.603);
+        border-radius: 15px;
+        color: white;
+      }
+
+      .three {
+        grid-column: 4 / 10;
+        grid-row: 9/ 11  ;
+        background-color: rgba(0, 0, 0, 0.603);
+        border-radius: 15px;
+        color: white;
+        text-align: center;
+      }
+
+      .four {
+        grid-column: 1 / 22;
+        grid-row: 14/ 16  ;
+        background: linear-gradient(to bottom right, #00628b 1%, #0084a2 25%, #00b8bc 100%);
+        color: white;
+        text-align: center;
+      }
+
+      .five {
+        grid-column: 13 / 20;
+        grid-row: 10 ;
+        color: white;
+        text-align: center;
+      }
+      
+      .five button {
+        margin: 10px;
+        box-shadow: 3px 3px #e5e5e5;
+      }
+
+      .six {
+        grid-column: 4 / 19;
+        grid-row: 17/ 32;
+        padding: 30px;
+      }
+
+      .seven {
+        grid-column: 1 / 22;
+        grid-row: 27 / 33;
+        background: url(/src/pages/faqs/images/Banner\ Fondo\ Transparente.png);
+        background-size: cover;
+      }
+      
+      .nineteen {
+        grid-column: 1 / 22;
+        grid-row: 33 / 37;
+        background-color: #ade0de;
+        text-align: center;
+      }
+
+      .nineteen button:hover {
+        background: linear-gradient(to bottom right, #00628b 1%, #0084a2 25%, #00b8bc 100%);
+      }
+
+      .twenty { 
+        grid-column: 1 / 22;
+        grid-row: 37 / 39;
+        background-color: #6cbfc6;
+        text-align: center;
+      }
+
+      .twentyone{
+        grid-column: 1 / 22;
+        grid-row: 30 / 32;
+        text-align: center;
+      }
+      .footer {
+    background-color: #061d25;
+    color: white;
+    padding: 30px 20px;
+    text-align: left;
+}
+
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin: 10px;
+}
+
+.footer-section h3 {
+    color: #6cbfc6;
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    color: #ade0de;
+    text-decoration: none;
+    transition: color 0.3s; 
+}
+
+.footer-section li {
+    margin: 10px; 
+}
+
+.footer-section a:hover {
+    color: #ffffff;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #6cbfc6;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.general-boton {
+        background-color: #6cbfc6;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 18px;
+        margin-bottom: 20px ;
+        cursor: pointer;
+        border-radius: 25px;
+        transition: background 0.5s ease-in-out, transform 0.3s ease-in-out;
+      }
+
+      .general-boton:hover {
+    background: linear-gradient(to bottom right, #00628b, #0084a2, #00b8bc);
+    transform: scale(1.05); /* Efecto de ligera expansión */
+}
+
+@keyframes show {
+	from {
+		opacity: 0;
+		scale: 25%;
+	}
+
+	to {
+		opacity: 1;
+		scale: 100%;
+	}
+}
+
+.four, .eight, .nine{
+	view-timeline-name: --image;
+	view-timeline-axis: block;
+
+	animation-timeline: --image;
+	animation-name: show;
+
+	animation-range: entry 25% cover 30%;
+	animation-fill-mode: both;
+}
+
+/* Responsive */
+
+/* RESPONSIVE TABLET 1250px*/
+@media (max-width: 1250px) {
+  .wrapper {
+    grid-template-columns: repeat(20, 1fr);
+  }
+
+  .two {
+    grid-row: 1/ 11;
+  }
+
+  .twotwo {
+    grid-column: 10 / 20;
+    grid-row:  4 / 8;
+  }
+
+  .three {
+    grid-column: 2 /9;
+    grid-row: 7 /9;
+  }
+
+  .four {
+    grid-row: 11;
+  }
+
+  .five {
+    grid-column: 10 /20;
+    grid-row: 8;
+  }
+
+  .six {
+    grid-row: 12 / 20;
+  }
+
+  .seven {
+    grid-row: 16 / 21;
+  }
+
+  .nineteen {
+    grid-row: 21;
+  }
+
+  .twenty {
+    grid-row: 22;
+}
+}
+/* RESPONSIVE TABLET 1024px*/
+@media (max-width: 1024px) {
+
+  .two {
+    grid-row: 1/ 10;
+  }
+
+  .twotwo {
+    grid-row: 3 / 7;
+  }
+  
+  .three {
+    grid-row: 6 / 8;;
+  }
+
+  .four {
+    grid-row: 10;
+  }
+
+  .five {
+    grid-row: 7;
+  }
+
+  .six {
+    grid-row: 11 / 19;
+}
+.seven {
+  grid-row: 15 / 20;
+}
+
+  .nineteen {
+  grid-row: 20;
+  }
+
+  .twenty {
+    grid-row: 21;
+  }
+}
+  /* RESPONSIVE TABLET 900px*/
+@media (max-width: 900px) {
+
+  .twotwo .info {
+    font-size: 17px ;
+  }
+
+  .twotwo .subtitle {
+    font-size: 34px;
+  }
+
+  .three .slogan{
+    font-size: 25px;
+  }
+
+  .four .slogan {
+    font-size: 25px;
+  }
+
+  .six {
+          grid-column: 1 /21;
+        }
+}
+
+.menu-toggle, .close-menu {
+        display: none;
+        background: none;
+        border: none;
+        font-size: 24px;
+        color: black;
+        cursor: pointer;
+    }
+  /* RESPONSIVE 800px*/
+  @media (max-width: 800px) {
+    
+
+        .menu-toggle {
+            display: block;
+        }
+
+
+        header.scrolled .links a {
+        color: #e5e5e5; /* Color de los enlaces cuando se desplaza */
+      }
+        .links {
+            position: fixed;
+            top: 0;
+            left: -100%;
+            width: 250px;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.9);
+            flex-direction: column;
+            align-items: start;
+            padding: 60px 20px;
+            transition: left 0.3s ease-in-out;
+        }
+
+        .links a {
+            display: block;
+            font-size: 20px;
+            padding: 10px 0;
+            color: white;
+        }
+
+        .links.active {
+            left: 0;
+            color: white;
+        }
+
+        .close-menu {
+            display: block;
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 28px;
+            color:white;
+        }
+
+        .sd {
+            font-size: 14px;
+        }
+
+        .info {
+            font-size: 16px;
+        }
+
+        .subtitle {
+            font-size: 24px;
+        }
+
+        h3 {
+            font-size: 20px;
+        }
+
+        .slogan {
+            font-size: 15px;
+        }
+
+        .servicios-nombre {
+            font-size: 16px;
+        }
+
+        .servicios-boton {
+            font-size: 16px;
+        }
+
+        .general-boton {
+            font-size: 16px;
+        }
+
+        .footer-section h3 {
+            font-size: 18px;
+        }
+
+        .footer-section a {
+            font-size: 16px;
+        }
+
+        .footer-bottom {
+            font-size: 14px;
+        }
+        .six {
+          grid-column: 1 /21;
+        }
+      }
+
+      /* RESPONSIVE de 600px*/
+      @media (max-width: 600px) {
+        .two {
+          grid-row: 1 / 9;
+        }
+        
+        .twotwo {
+          grid-column: 1 / 21;
+          grid-row: 7 / 9;
+          border-radius: 0;
+          border-top-left-radius: 15px;
+          border-top-right-radius: 15px;
+        }
+
+        .three {
+          grid-column: 1/21;
+          grid-row: 10;
+          border-radius: 0;
+        }
+
+        .four{
+          grid-row: 11;
+        }
+        .five {
+          grid-column: 1 / 21;
+          grid-row: 9;
+          background-color: rgba(0, 0, 0, 0.603);;
+        }
+
+        .six {
+          grid-column: 1 /21;
+          grid-row: 12 / 18;
+          padding: 10px;
+        }
+
+        .seven {
+          grid-row: 14 / 19;
+        }
+
+        .nineteen {
+          grid-row:  19;
+        }
+
+        .twenty {
+          grid-row: 20;
+        }
+        
+        .sd {
+          padding: 10px;
+        }
+      }
+
+      /* RESPONSIVE de 440px*/
+      @media (max-width: 440px) {
+
+        .four .slogan {
+          font-size: 19px;
+        }
+      }
