@@ -234,6 +234,10 @@ color: #1A375E; /* Color de los enlaces cuando se desplaza */
         text-align: center;
       }
 
+      .seven a {
+          text-decoration: none;
+        }
+
       .twentyone{
         grid-column: 1 / 22;
         grid-row: 30 / 32;
@@ -598,6 +602,10 @@ ul {
 
         .seven {
           grid-row: 14 / 19;
+        }
+
+        .seven a {
+          text-decoration: none;
         }
 
         .nineteen {
