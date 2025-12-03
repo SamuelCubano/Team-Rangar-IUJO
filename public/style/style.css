@@ -170,21 +170,25 @@
       }
 
       .five {
-        grid-column: 12 / 18;
+        grid-column: 9 / 18;
         grid-row: 29 / 32;
         background-color: rgba(135, 207, 235, 0.514);
         border-radius: 15px;
         border: 3px solid skyblue;
         background-size: cover;
+        margin: 20px;
+        margin-top: 0;
       }
 
       .six {
-        grid-column: 5 / 11;
+        grid-column: 5 / 14;
         grid-row: 26 / 29;
         background-color: rgba(248, 175, 248, 0.5);
         border: 3px solid rgb(221, 160, 221);
         border-radius: 15px;
         background-size: cover;
+        margin: 20px;
+        margin-top: 0;
       }
 
       .seven {
@@ -194,11 +198,14 @@
       }
 
       .eight {
-        grid-column: 5 / 11;
+        grid-column: 5 / 14;
         grid-row: 32 / 35;
         background-color: rgba(210, 180, 140, 0.5);
         border: 3px solid tan;
         border-radius: 15px;
+        margin: 20px;
+        margin-top: 0;
+        margin-bottom: 0;
       }
 
       .nine {
@@ -224,6 +231,8 @@
         background-size: cover;
         background-position-x: center;
         background-position-y: center;
+        border-radius: 15px;
+        border: solid 3px skyblue;
       }
 
       .twelve {
@@ -234,6 +243,8 @@
         background-size: cover;
         background-position-x: center;
         background-position-y: center;
+        border-radius: 15px;
+        border: solid 3px tan;
       }
 
 
@@ -245,6 +256,8 @@
         background-size: cover;
         background-position-x: center;
         background-position-y: center;
+        border-radius: 15px;
+        border: solid 3px rgb(221, 160, 221);
       }
 
       .fifteen {
@@ -255,6 +268,8 @@
         background-size: cover;
         background-position-x: center;
         background-position-y: center;
+        border-radius: 15px;
+        border: solid 3px yellowgreen;
       } 
 
       .servicios-nombre {
@@ -359,6 +374,8 @@
     background-size: cover;
     background-position-x: center;
     background-position-y: center;
+    border: solid 3px skyblue;
+    border-radius: 15px;
   }
 
   .twenty-four {
@@ -373,6 +390,8 @@
     background-size: cover;
     background-position-x: center;
     background-position-y: center;
+    border: solid 3px tan;
+    border-radius: 15px;
   }
 
   .twenty-six {
@@ -387,6 +406,8 @@
     background-size: cover;
     background-position-x: center;
     background-position-y: center;
+    border: solid 3px rgb(221, 160, 221);
+    border-radius: 15px;
   }
 
       .twenty-eight {
@@ -1038,37 +1059,43 @@ ul {
     .twenty-two {
       grid-column: 1 / 6;
       grid-row: 50 / 55;
-      border:solid 3px skyblue
+      border:solid 3px skyblue;
+      margin-bottom: 10px;
     }
 
     .twenty-three {
       grid-column: 6 / 11;
       grid-row: 50 / 55;
-      margin: 5px;
+      border-radius: 0;
+      margin-bottom: 10px;
     }
 
     .twenty-four {
       grid-column: 1 / 6;
       grid-row: 55 / 60;
       border: 3px solid tan;
+      margin-bottom: 10px;
     }
 
     .twenty-five {
       grid-column: 6 / 11;
       grid-row: 55 / 60;
-      margin: 5px;
+      border-radius: 0;
+      margin-bottom: 10px;
     }
 
     .twenty-six {
       grid-column: 1 / 6;
       grid-row: 60 / 65;
       border: 3px solid rgb(221, 160, 221);
+      margin-bottom: 10px;
     }
 
     .twenty-seven {
       grid-column: 6 / 11;
       grid-row: 60 / 65;
-      margin: 5px;
+      border-radius: 0;
+      margin-bottom: 10px;
     }
 
     .twenty-eight {
