@@ -1,6 +1,5 @@
 ---
-import { Image } from 'astro:assets';
-import Card from "../faqs/componentes/faq.astro";
+
 ---
 
 <!DOCTYPE html>
@@ -49,15 +48,63 @@ import Card from "../faqs/componentes/faq.astro";
       
       <div class="seven"></div>
       <div class="six">
-        <Card title="Pregunta 1" info="Respuesta 1"></Card>
-        <Card title="Pregunta 2" info="Respuesta 2"></Card>
-        <Card title="Pregunta 3" info="Respuesta 3"></Card>
-        <Card title="Pregunta 4" info="Respuesta 4"></Card>
-        <Card title="Pregunta 5" info="Respuesta 5"></Card>
-        <Card title="Pregunta 6" info="Respuesta 6"></Card>
-        <Card title="Pregunta 7" info="Respuesta 7"></Card>
-        <Card title="Pregunta 8" info="Respuesta 8"></Card>
-        <Card title="Pregunta 9" info="Respuesta 9"></Card>
+        
+        <details>
+    <summary>
+      <h4  data-es="1. ¿Qué es un Deepfake?" data-en="1. What is a Deepfake?">1. What is a Deepfake?</h4>
+      <span class="flecha"><i class="fa-solid fa-arrow-down"></i></span>
+    </summary>
+    <div class="contenido">
+      <hr>
+      <p data-es="Es un contenido audiovisual (video o audio) falsificado con hiperrealismo utilizando Inteligencia Artificial avanzada (Deep Learning)." data-en="It is an audiovisual content (video or audio) falsified with hyperrealism using advanced Artificial Intelligence (Deep Learning).">It is an audiovisual content (video or audio) falsified with hyperrealism using advanced Artificial Intelligence (Deep Learning).</p>
+    </div>
+</details>
+
+<details>
+    <summary>
+      <h4  data-es="2. ¿Cuál es la tecnología detrás del Deepfake?" data-en="2. What is the technology behind Deepfake?">2. What is the technology behind Deepfake?</h4>
+      <span class="flecha"><i class="fa-solid fa-arrow-down"></i></span>
+    </summary>
+    <div class="contenido">
+      <hr>
+      <p data-es="Principalmente las Redes Generativas Adversariales (GANs), que enfrentan dos IAs para perfeccionar la falsificación." data-en="Mainly Generative Adversarial Networks (GANs), which pit two AIs against each other to perfect the forgery.">Mainly Generative Adversarial Networks (GANs), which pit two AIs against each other to perfect the forgery.</p>
+    </div>
+</details>
+
+<details>
+    <summary>
+      <h4  data-es="3. ¿Solo existen Deepfakes de video?" data-en="3. Are there only video deepfakes?">3. Are there only video deepfakes?</h4>
+      <span class="flecha"><i class="fa-solid fa-arrow-down"></i></span>
+    </summary>
+    <div class="contenido">
+      <hr>
+      <p data-es="No. La Clonación de Voz (audio Deepfake) es una amenaza clave, usada a menudo en el fraude corporativo (Voice Hacking)." data-en="No. Voice cloning (deepfake audio) is a key threat, often used in corporate fraud (voice hacking).">No. Voice cloning (deepfake audio) is a key threat, often used in corporate fraud (voice hacking).</p>
+    </div>
+</details>
+
+<details>
+    <summary>
+      <h4  data-es="4. ¿Cuál es el mayor riesgo personal de los Deepfakes?" data-en="4. What is the biggest personal risk of deepfakes?">4. What is the biggest personal risk of deepfakes?</h4>
+      <span class="flecha"><i class="fa-solid fa-arrow-down"></i></span>
+    </summary>
+    <div class="contenido">
+      <hr>
+      <p data-es="La creación de Pornografía No Consensuada (PNCP), que afecta desproporcionadamente a mujeres y causa daño irreversible." data-en="The creation of Non-Consensual Pornography (NCP), which disproportionately affects women and causes irreversible harm.">The creation of Non-Consensual Pornography (NCP), which disproportionately affects women and causes irreversible harm.</p>
+    </div>
+</details>
+
+<details>
+    <summary>
+      <h4  data-es="4. ¿Cuál es el mayor riesgo personal de los Deepfakes?" data-en="4. What is the biggest personal risk of deepfakes?">4. What is the biggest personal risk of deepfakes?</h4>
+      <span class="flecha"><i class="fa-solid fa-arrow-down"></i></span>
+    </summary>
+    <div class="contenido">
+      <hr>
+      <p data-es="5. ¿Cuál es la principal señal visual para detectarlos?" data-en="5. What is the main visual sign to detect them?">5. What is the main visual sign to detect them?</p>
+    </div>
+</details>
+
+
       </div>
       
       <div class="nineteen">
@@ -179,5 +226,41 @@ import Card from "../faqs/componentes/faq.astro";
     });
   }
 </script>
+
+
+<script>
+  // Selecciona todos los elementos <details>
+      const detailsElements = document.querySelectorAll("details");
+  
+  // Itera sobre cada <details> y controla su apertura/cierre
+  detailsElements.forEach(details => {
+    const flecha = details.querySelector(".flecha");
+    const contenido = details.querySelector(".contenido");
+  
+    const summary = details.querySelector("summary");
+    if (summary) {
+      summary.addEventListener("click", (event) => {
+      event.preventDefault(); // Evita el comportamiento nativo de <details>
+  
+      if (details.hasAttribute("open")) {
+        // Ocultar contenido
+        if (contenido) {
+          (contenido as HTMLElement).style.maxHeight = "0";
+        }
+        (flecha as HTMLElement).style.transform = "rotate(0deg)"; // Flecha hacia arriba
+        setTimeout(() => details.removeAttribute("open"), 3000); // Quita "open" después de la transición
+      } else {
+        // Mostrar contenido
+        details.setAttribute("open", "");
+        if (contenido) {
+          (contenido as HTMLElement).style.maxHeight = contenido.scrollHeight + "px"; // Expandir contenido
+        }
+        (flecha as HTMLElement).style.transform = "rotate(180deg)"; // Flecha hacia abajo
+      }
+    });
+  }
+  });
+  
+    </script>
   </body>
 </html>

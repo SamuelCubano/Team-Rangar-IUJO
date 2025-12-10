@@ -628,3 +628,54 @@ ul {
           font-size: 19px;
         }
       }
+
+
+          .contenido {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease; /* Transición para mostrar/ocultar contenido */
+}
+
+.flecha {
+  transform: rotate(0deg);
+  transition: transform 0.3s ease; /* Transición de la flecha */
+  font-size: 25px;
+}
+
+summary {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+details {
+  background: linear-gradient(to bottom right, #00628b 1%, #0084a2 25%, #00b8bc 100%);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.541);
+  width: 80%; /* Se ajusta dinámicamente al tamaño de la pantalla */
+  max-width: 1000px; /* Evita que crezca demasiado en pantallas grandes */
+  padding: 20px;
+  color: aliceblue;
+  border-radius: 20px;
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 19px;
+  transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 600px) {
+
+  details {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  summary, .contenido {
+    font-size: 18px;
+  }
+}
+
+h4{
+  margin: 0;
+}
