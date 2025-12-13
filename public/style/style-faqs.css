@@ -679,3 +679,15 @@ details {
 h4{
   margin: 0;
 }
+
+iframe {
+  display: block;
+  margin: 30px auto;
+  max-width: 100%;
+  border-radius: 15px;
+}
+
+.six .subtitle {
+  text-align: center;
+  color: white;
+}
