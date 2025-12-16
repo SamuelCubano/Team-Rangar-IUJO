@@ -60,6 +60,8 @@ z-index: 1000;
       .subtitle {
         font-size: 40px;
         margin: 20px 15px;
+        color: #ffffff;
+        text-shadow: 1px 2px 2px #00264D;
       }
 
       h3 {
