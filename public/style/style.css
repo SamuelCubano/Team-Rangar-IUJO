@@ -33,11 +33,11 @@
         z-index: 1000;
       }
 
-      header.scrolled {
-        background-color: #e5e5e5; /* Fondo blanco cuando se desplaza */
-        color: black;
-        box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.25);
-        -webkit-box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.25);
+    header.scrolled {
+      background-color: #e5e5e5; /* Fondo blanco cuando se desplaza */
+      color: black;
+      box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.25);
+      -webkit-box-shadow: 0px 6px 5px 0px rgba(135, 207, 235, 0.555);
       }
 
       .sd {
