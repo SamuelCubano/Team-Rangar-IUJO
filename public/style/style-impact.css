@@ -617,13 +617,13 @@ ul {
 /*  RESPONSIVE 600px   */
 
 .menu-toggle, .close-menu {
-        display: none;
-        background: none;
-        border: none;
-        font-size: 24px;
-        color: black;
-        cursor: pointer;
-    }
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: black;
+  cursor: pointer;
+}
 
     @media (max-width: 600px) { 
 
